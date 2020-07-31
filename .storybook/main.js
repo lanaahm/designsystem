@@ -10,7 +10,7 @@ module.exports = {
     '@storybook/addon-a11y',
     'storybook-addon-jsx/',
   ],
-  webpackFinal: config => {
+  webpackFinal: (config) => {
     config.module.rules.push({
       test: /\.(ts|tsx)?$/,
       use: [{
@@ -23,7 +23,8 @@ module.exports = {
             }]
           ],
         },
-      }, ],
+      }],
+      include: path.resolve(__dirname, '../components'),
     });
 
     config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx');
