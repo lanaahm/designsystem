@@ -4,7 +4,6 @@ import {
   colors,
   space,
   fonts,
-  typeScale,
   elevation,
   breakpoints,
   mediaQueries,
@@ -25,7 +24,6 @@ export const themeProps = {
   mediaQueries,
 
   // Custom theme props based on custom component variants.
-  typeScale,
   elevation,
   componentStyles,
 };
@@ -37,8 +35,8 @@ export const Theme: React.FC = ({ children }) => {
 export type Color = keyof typeof themeProps["colors"];
 export type Space = keyof typeof themeProps["space"];
 export type Elevation = keyof typeof themeProps["elevation"];
-export type TypeScale = keyof typeof themeProps["typeScale"];
-export type CardElevation = keyof typeof componentStyles.card;
+export type CardElevation = keyof typeof componentStyles.boxShadow;
+export type SubtitlehScale = keyof typeof componentStyles.subtitle;
 export type TextScale = keyof typeof componentStyles.text;
-export type ParagraphScale = keyof typeof componentStyles.paragraph;
+export type BoxShadow = keyof typeof componentStyles.boxShadow;
 export type HeadingScale = keyof typeof componentStyles.heading;

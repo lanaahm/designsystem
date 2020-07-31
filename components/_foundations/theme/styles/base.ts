@@ -53,7 +53,6 @@ const skeleton = `
 `;
 
 const base = css`
-  ${skeleton}
   html,
   body,
   #root {
@@ -148,6 +147,7 @@ const base = css`
     clip: auto;
   }
 
+  ${skeleton}
   ${BCCTabsStyle}
 `;
 

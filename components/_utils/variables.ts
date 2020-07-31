@@ -1,4 +1,5 @@
 import { transparentize } from "polished";
+
 const PrimaryColors = {
   biru: "#3498DB",
   hitam: "#1B1B1B",
@@ -57,7 +58,7 @@ const SaturationShadeColors = {
   hijau05: "#ABEBC6",
 };
 
-export const fonts = "'open sans', sans-serif";
+export const fonts = "Work Sans";
 export const colors = {
   white: "#fff",
   black: "#000",
@@ -85,22 +86,12 @@ export const spaceLegacy = {
   space6: 48,
   /** Equivalent to 56px */
   space7: 56,
-  /** Equivalent to 64px */
-  space8: 64,
-  /** Equivalent to 72px */
-  space9: 72,
-  /** Equivalent to 80px */
-  space10: 80,
 };
 
 /** Space values (in px) mapped by size designators */
 
 export const space = {
   ...spaceLegacy,
-  /** Equivalent to 2px */
-  xxxs: 2,
-  /** Equivalent to 4px */
-  xxs: 4,
   /** Equivalent to 8px */
   xs: 8,
   /** Equivalent to 12px */
@@ -113,6 +104,8 @@ export const space = {
   xl: 32,
   /** Equivalent to 48px */
   xxl: 48,
+  /** Equivalent to 56px */
+  xxxl: 56,
 };
 
 export const breakpoints = ["1024px", "1280px", "1440px", "1600px"];
@@ -180,49 +173,5 @@ export const elevation = {
   },
   level5: {
     boxShadow: `0px 24px 48px ${shadowColor};`,
-  },
-};
-
-/** Typography scale values (in pixels) mapped by style tokens. */
-export const typeScale = {
-  heading1: {
-    fontSize: 28,
-    lineHeight: 32,
-  },
-  heading2: {
-    fontSize: 24,
-    lineHeight: 30,
-  },
-  heading3: {
-    fontSize: 20,
-    lineHeight: 24,
-  },
-  heading4: {
-    fontSize: 18,
-    lineHeight: 22,
-  },
-  heading5: {
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  paragraph: {
-    fontSize: 14,
-    lineHeight: 20,
-  },
-  large: {
-    fontSize: 16,
-    lineHeight: 24,
-  },
-  body: {
-    fontSize: 13,
-    lineHeight: 20,
-  },
-  label: {
-    fontSize: 12,
-    lineHeight: 16,
-  },
-  small: {
-    fontSize: 11,
-    lineHeight: 16,
   },
 };

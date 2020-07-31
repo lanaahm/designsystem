@@ -3,7 +3,7 @@ import { colors } from "../variables";
 
 const shadowColor = transparentize(0.85, colors.hitam04);
 
-const card = {
+const boxShadow = {
   1: {
     boxShadow: "none",
   },
@@ -21,4 +21,4 @@ const card = {
   },
 };
 
-export default card;
+export default boxShadow;

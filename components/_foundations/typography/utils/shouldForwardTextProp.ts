@@ -1,6 +1,5 @@
-  
-const shouldForwardTextProp = (prop: string) => {
-    return !['scale'].includes(prop);
-  };
-  
-  export default shouldForwardTextProp;
+const shouldForwardTextProp = (prop) => {
+  return !["scale"].includes(prop);
+};
+
+export default shouldForwardTextProp;

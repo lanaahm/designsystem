@@ -23,8 +23,10 @@ const SystemBlock: React.FC<SystemBlockProps> = ({
     height="100%"
     minHeight="100%"
   >
-    <SystemHeader title={title} subtitle={subtitle} />
-    <SystemContainer noBackground={noBackground}>{children}</SystemContainer>
+    {title ? <SystemHeader title={title} subtitle={subtitle} /> : undefined}
+    <SystemContainer py={title ? undefined : "xxl"} noBackground={noBackground}>
+      {children}
+    </SystemContainer>
   </Box>
 );
 

@@ -4,16 +4,18 @@ import StoryContainer from "./StoryContainer";
 
 interface SystemContainerProps {
   noBackground?: boolean;
+  py?: String;
 }
 
 const SystemContainer: React.FC<SystemContainerProps> = ({
   children,
+  py,
   noBackground = false,
 }) => (
   <Box
     flex="1 1 auto"
     px="lg"
-    py="x"
+    py={py}
     backgroundColor={!noBackground ? "white" : undefined}
   >
     <StoryContainer>{children}</StoryContainer>

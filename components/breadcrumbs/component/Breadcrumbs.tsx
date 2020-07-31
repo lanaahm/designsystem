@@ -12,6 +12,7 @@ export interface BreadcrumbsProps {
 const Nav = styled("nav")`
   display: block;
 `;
+
 const Ol = styled("ol")`
   display: flex;
   list-style: none;
@@ -33,7 +34,6 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
     });
   });
 
-  console.log(crumbs);
   return (
     <Nav>
       <Ol {...rest}> {crumbs} </Ol>

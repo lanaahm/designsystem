@@ -1,10 +1,11 @@
 import * as React from "react";
 import { Box, Heading, Stack, StackProps } from "../../_foundations";
+import { HeadingScale } from "../../Theme";
 
 interface ComponentBlockProps extends Omit<StackProps, "spacing"> {
-  title: string;
+  title?: string;
   withBackground?: boolean;
-  scaleTitle?: string;
+  scaleTitle?: HeadingScale;
   pd?: string;
 }
 
@@ -17,7 +18,7 @@ const ComponentBlock: React.FC<ComponentBlockProps> = ({
   ...rest
 }) => (
   <Stack spacing="md" {...rest}>
-    <Heading color="hitam02" scale={scaleTitle} m={0}>
+    <Heading color="hitam02" scale={scaleTitle}>
       {title}
     </Heading>
     <Box

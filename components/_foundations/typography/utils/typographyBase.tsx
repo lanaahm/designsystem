@@ -1,4 +1,4 @@
-import { css } from 'styled-components';
+import { css } from "styled-components";
 import {
   layout,
   LayoutProps,
@@ -8,9 +8,13 @@ import {
   ColorProps,
   typography,
   TypographyProps as StyledTypographyProps,
-} from 'styled-system';
+} from "styled-system";
 
-export interface TypographyBaseProps extends LayoutProps, SpaceProps, ColorProps, StyledTypographyProps {
+export interface TypographyBaseProps
+  extends LayoutProps,
+    SpaceProps,
+    ColorProps,
+    StyledTypographyProps {
   /** Additional CSS classes to add to the component. */
   className?: string;
   /** Additional CSS properties to add to the component. */

@@ -1,90 +1,103 @@
 /** Heading size values mapped by size number. */
 export const heading = {
-  900: {
-    fontSize: "42px",
-    lineHeight: "48px",
-    fontWeight: 500,
-    letterSpacing: "-0.2px",
+  100: {},
+  heading1: {
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 96,
+    lineHeight: "110px",
+    letterSpacing: "-0.015em",
   },
-  800: {
-    fontSize: "35px",
+  heading2: {
+    fontStyle: "normal",
+    fontWeight: 300,
+    fontSize: 60,
+    lineHeight: "71px",
+    letterSpacing: "-0.005em",
+  },
+  heading3: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 48,
+    lineHeight: "57px",
+  },
+  heading4: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 34,
     lineHeight: "40px",
-    fontWeight: 500,
-    letterSpacing: "-0.2px",
+    letterSpacing: "0.0025em",
   },
-  700: {
-    fontSize: "29px",
-    lineHeight: "32px",
-    fontWeight: 500,
-    letterSpacing: "-0.2px",
-  },
-  600: {
-    fontSize: "24px",
+  heading5: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 24,
     lineHeight: "28px",
-    fontWeight: 500,
-    letterSpacing: "-0.05px",
   },
-  500: {
-    fontSize: "20px",
+  heading6: {
+    fontStyle: "normal",
+    fontWeight: 500,
+    fontSize: 20,
     lineHeight: "24px",
+    letterSpacing: "0.0015em",
+  },
+};
+
+/** Subtitle size values mapped by scale token. */
+export const subtitle = {
+  subtitle1: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 16,
+    lineHeight: "19px",
+    letterSpacing: "0.0015em",
+  },
+  subtitle2: {
+    fontStyle: "normal",
     fontWeight: 500,
-    letterSpacing: "-0.05px",
-  },
-  400: {
-    fontSize: "16px",
-    lineHeight: "20px",
-    fontWeight: 600,
-    letterSpacing: "-0.05px",
-  },
-  300: {
-    fontSize: "14px",
-    lineHeight: "20px",
-    fontWeight: 600,
-    letterSpacing: "-0.05px",
-  },
-  200: {
-    fontSize: "12px",
-    lineHeight: "16px",
-    fontWeight: 600,
-    letterSpacing: "0px",
-  },
-  100: {
-    fontSize: "12px",
-    lineHeight: "16px",
-    fontWeight: 600,
-    textTransform: "uppercase",
-    letterSpacing: "0.5px",
+    fontSize: 14,
+    lineHeight: "17px",
+    letterSpacing: "0.001em",
   },
 };
 
 /** Text size values mapped by scale token. */
 export const text = {
-  500: {
-    fontSize: "20px",
-    lineHeight: "24px",
+  body1: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 16,
+    lineHeight: 24,
+    letterSpacing: "0.005em",
   },
-  400: {
-    fontSize: "16px",
-    lineHeight: "20px",
+  body2: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 14,
+    lineHeight: 21,
+    letterSpacing: "0.0025em",
   },
-  300: {
-    fontSize: "14px",
-    lineHeight: "20px",
+  button: {
+    fontStyle: "normal",
+    fontWeight: 600,
+    fontSize: 14,
+    lineHeight: 21,
+    letterSpacing: "1.25px",
+    textTransform: "capitalize",
   },
-  200: {
-    fontSize: "12px",
-    lineHeight: "16px",
+  caption: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 12,
+    lineHeight: 20,
+    letterSpacing: "0.005em",
   },
-};
-
-/** Text size values mapped by scale token. */
-export const paragraph = {
-  400: {
-    fontSize: "16px",
-    lineHeight: "24px",
-  },
-  300: {
-    fontSize: "14px",
-    lineHeight: "24px",
+  overline: {
+    fontStyle: "normal",
+    fontWeight: "normal",
+    fontSize: 12,
+    lineHeight: 20,
+    letterSpacing: "0.015em",
+    textTransform: "uppercase",
   },
 };

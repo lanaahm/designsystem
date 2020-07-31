@@ -24,19 +24,13 @@ const Text = styled("span").withConfig<TextProps>({
 })`
   ${variant({
     prop: "scale",
-    scale: "componentStyles.text",
-    variants: {
-      500: {},
-      400: {},
-      300: {},
-      200: {},
-    },
+    scale: "componentStyles.TextScale",
   })}
   ${typographyBase}
 `;
 
 Text.defaultProps = {
-  scale: 400,
+  scale: "body1",
 };
 
 Text.displayName = "Text";
