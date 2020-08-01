@@ -15,41 +15,25 @@
         "plugin:prettier/recommended"
     ],
     "parser": "@typescript-eslint/parser",
-    "parserOptions": {
-        "ecmaFeatures": {
-            "jsx": true
-        },
-        "ecmaVersion": 11
-    },
     "plugins": [
         "@typescript-eslint",
         "prettier"
     ],
     "overrides": [{
-            "files": ["**/*.ts", "**/*.tsx"],
-            "rules": {
-                "@typescript-eslint/no-unused-vars": [2, {
-                    "args": "none"
-                }],
-                "no-unused-expressions": "off",
-                "@typescript-eslint/no-unused-expressions": 2,
-                "@typescript-eslint/camelcase": "off",
-                "@typescript-eslint/no-var-requires": ["off"],
-                "@typescript-eslint/explicit-function-return-type": ["off"],
-                // No need to use prop types on TS files.
-                "react/prop-types": "off"
-            }
-        },
-        {
-            "files": [".eslintrc.js", "*.config.js"],
-            "parserOptions": {
-                "sourceType": "script"
-            },
-            "env": {
-                "node": true
-            }
+        "files": ["**/*.ts", "**/*.tsx"],
+        "rules": {
+            "@typescript-eslint/no-unused-vars": [2, {
+                "args": "none"
+            }],
+            "no-unused-expressions": "off",
+            "@typescript-eslint/no-unused-expressions": 2,
+            "@typescript-eslint/camelcase": "off",
+            "@typescript-eslint/no-var-requires": ["off"],
+            "@typescript-eslint/explicit-function-return-type": ["off"],
+            // No need to use prop types on TS files.
+            "react/prop-types": "off"
         }
-    ],
+    }],
     "rules": {
         "dot-notation": "off",
         "jsx-a11y/anchor-is-valid": "off",
@@ -69,6 +53,7 @@
         "import/export": "off",
         "import/extensions": "off",
         "import/no-cycle": "off",
+        "import/named": "off",
         "import/no-extraneous-dependencies": [
             "error",
             {

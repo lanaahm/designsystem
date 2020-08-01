@@ -1,1 +1,0 @@
-{"version":3,"file":"SystemHeader.d.ts","sourceRoot":"","sources":["../../../components/_utils/storybook/SystemHeader.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAI/B,MAAM,WAAW,iBAAiB;IAChC,KAAK,EAAE,MAAM,CAAC;IACd,QAAQ,CAAC,EAAE,KAAK,CAAC,SAAS,CAAC;CAC5B;AAED,QAAA,MAAM,YAAY,EAAE,KAAK,CAAC,EAAE,CAAC,iBAAiB,CAe7C,CAAC;AAIF,eAAe,YAAY,CAAC"}

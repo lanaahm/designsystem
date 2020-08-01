@@ -1,1 +1,0 @@
-{"version":3,"file":"typographyBase.js","sourceRoot":"","sources":["../../../../components/_foundations/typography/utils/typographyBase.tsx"],"names":[],"mappings":"AAAA,OAAO,EAAE,GAAG,EAAE,MAAM,mBAAmB,CAAC;AACxC,OAAO,EACL,MAAM,EAEN,KAAK,EAEL,KAAK,EAEL,UAAU,GAEX,MAAM,eAAe,CAAC;AAkBvB,MAAM,cAAc,GAAG,GAAG,CAAA;IACtB,MAAM;IACN,KAAK;IACL,KAAK;IACL,UAAU;CACb,CAAC;AAEF,eAAe,cAAc,CAAC"}

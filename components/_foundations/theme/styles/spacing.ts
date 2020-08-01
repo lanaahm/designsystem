@@ -34,7 +34,7 @@ const spacing = css`
       .pl-${val}, .px-${val} {
         padding-left: ${spaceLegacy[`space${val}`]} !important;
       }
-    `
+    `,
   )};
 `;
 

@@ -21,8 +21,7 @@ const Ol = styled('ol')`
 `;
 
 const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = '/', children, ...rest }) => {
-  let crumbs;
-  crumbs = toArray(children).map((element: any, index) => {
+  const crumbs = toArray(children).map((element, index) => {
     return React.cloneElement(element, {
       separator,
       key: index,

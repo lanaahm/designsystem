@@ -53,7 +53,8 @@ const Comp = styled('li')<BreadcrumbItemProps>`
 
   &:before,
   &.before {
-    content: "${props => (props.separator == '&lt;' || '&gt;' ? entities.decode(props.separator) : props.separator)}";
+    content: "${props =>
+      props.separator === '&lt;' || '&gt;' ? entities.decode(props.separator) : props.separator}";
     color: ${themeGet('colors.primaryText', colors.primaryText)};
     position: absolute;
     left: -0.25rem;

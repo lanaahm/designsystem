@@ -7,7 +7,11 @@ interface SystemContainerProps {
   py;
 }
 
-const SystemContainer: React.FC<SystemContainerProps> = ({ children, py, noBackground = false }) => (
+const SystemContainer: React.FC<SystemContainerProps> = ({
+  children,
+  py,
+  noBackground = false,
+}) => (
   <Box flex="1 1 auto" px="lg" py={py} backgroundColor={!noBackground ? 'white' : undefined}>
     <StoryContainer>{children}</StoryContainer>
   </Box>

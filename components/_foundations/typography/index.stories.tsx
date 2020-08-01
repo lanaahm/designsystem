@@ -51,18 +51,19 @@ export const Skelaton = () => (
       <Box display="grid" gridTemplateColumns="2fr 1fr">
         <Stack spacing="sm">
           <Paragraph className="skeleton w15">
-            Open sans merupakan humanist sans-serif typeface didesign oleh Steve Matteson setela diberi tugas oleh
-            google dan dirilis pada tahun 2011. Font ini merupakan font sebelumnya yaitu Droid sans, yang didesign untuk
-            digunakan pada android
+            Open sans merupakan humanist sans-serif typeface didesign oleh Steve Matteson setela
+            diberi tugas oleh google dan dirilis pada tahun 2011. Font ini merupakan font sebelumnya
+            yaitu Droid sans, yang didesign untuk digunakan pada android
           </Paragraph>
           <Paragraph className="skeleton">
-            Open sans umum digunakan pada halaman web, browser (digunakan mozilla sampai tahun 2019), dekstop app
-            (Telegram). Penggunaan open sans dioptimalkan untuk bacaan dengan blbalbala
+            Open sans umum digunakan pada halaman web, browser (digunakan mozilla sampai tahun
+            2019), dekstop app (Telegram). Penggunaan open sans dioptimalkan untuk bacaan dengan
+            blbalbala
           </Paragraph>
           <Paragraph className="skeleton">
-            Open sans sebagai sans-serif dengan sifat tegas dan moern dipilih sesuai dari init dari hasil research yang
-            didapatkan yaitu kekeluargaan dan visioner segabagai ciri khas dan pandangan orang lain terpadahp BCC
-            FILKOM.
+            Open sans sebagai sans-serif dengan sifat tegas dan moern dipilih sesuai dari init dari
+            hasil research yang didapatkan yaitu kekeluargaan dan visioner segabagai ciri khas dan
+            pandangan orang lain terpadahp BCC FILKOM.
           </Paragraph>
           <Paragraph className="skeleton">
             Pros
