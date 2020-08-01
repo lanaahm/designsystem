@@ -1,3 +1,3 @@
-declare const BCCTabsStyle: import("styled-components").FlattenSimpleInterpolation;
+declare const BCCTabsStyle: import('styled-components').FlattenSimpleInterpolation;
 export default BCCTabsStyle;
-//# sourceMappingURL=BCCTabsStyle.d.ts.map
+// # sourceMappingURL=BCCTabsStyle.d.ts.map

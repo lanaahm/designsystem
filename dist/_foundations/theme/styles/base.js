@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import { colors, fonts } from '../../../_utils/variables';
 import BCCTabsStyle from './BCCTabsStyle';
+
 const skeleton = `
 .skeleton {
 	min-height: 15px;
@@ -50,7 +51,7 @@ const skeleton = `
 	}
 }
 `;
-const base = css `
+const base = css`
   html,
   body,
   #root {
@@ -149,4 +150,4 @@ const base = css `
   ${BCCTabsStyle}
 `;
 export default base;
-//# sourceMappingURL=base.js.map
+// # sourceMappingURL=base.js.map

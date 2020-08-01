@@ -1,2 +1,2 @@
 export * from './Stack';
-//# sourceMappingURL=index.js.map
+// # sourceMappingURL=index.js.map

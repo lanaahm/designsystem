@@ -7,4 +7,4 @@ export * from './component/Paragraph';
 export { default as Text } from './component/Text';
 export * from './component/Text';
 export * from './utils';
-//# sourceMappingURL=index.d.ts.map
+// # sourceMappingURL=index.d.ts.map

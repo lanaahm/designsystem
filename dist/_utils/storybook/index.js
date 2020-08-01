@@ -6,4 +6,4 @@ export { default as SystemContainer } from './SystemContainer';
 export { default as SystemHeader } from './SystemHeader';
 export { default as SystemSubheading } from './SystemSubheading';
 export { default as SystemWrapper } from './SystemWrapper';
-//# sourceMappingURL=index.js.map
+// # sourceMappingURL=index.js.map

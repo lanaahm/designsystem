@@ -7,7 +7,7 @@
     "build": "tsc -p .",
     "lint": "npm run build && npm run lint:script ",
     "lint-fix:script": "npm run lint:script -- --fix",
-    "lint:script": "eslint . --ext '.js,.jsx,.ts,.tsx'"
+    "lint:script": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -31,7 +31,7 @@
   "devDependencies": {
     "@storybook/addon-a11y": "^5.3.18",
     "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.19",
     "@storybook/addon-links": "^5.3.18",
     "@storybook/addon-notes": "^5.3.18",
     "@storybook/react": "^5.3.18",

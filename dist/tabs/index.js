@@ -1,4 +1,4 @@
 export { Tabs } from './component/tabs';
 export { TabPane } from './component/tabs';
 export * from './component/tabs';
-//# sourceMappingURL=index.js.map
+// # sourceMappingURL=index.js.map

@@ -81,7 +81,7 @@ export const Example = () => (
             verticalAlign="top"
             width="120px"
             height="120px"
-          ></Box>
+          />
           <Box ml={12} display="inline-block" verticalAlign="top">
             <Heading color={colors.black} scale="heading5">
               Orange
@@ -91,13 +91,7 @@ export const Example = () => (
           </Box>
         </Box>
         <Box mb={24}>
-          <Box
-            backgroundColor={colors.merah}
-            display="inline-block"
-            verticalAlign="top"
-            width="120px"
-            height="120px"
-          ></Box>
+          <Box backgroundColor={colors.merah} display="inline-block" verticalAlign="top" width="120px" height="120px" />
           <Box ml={12} display="inline-block" verticalAlign="top">
             <Heading color={colors.black} scale="heading5">
               Merah
@@ -107,13 +101,7 @@ export const Example = () => (
           </Box>
         </Box>
         <Box mb={24}>
-          <Box
-            backgroundColor={colors.hijau}
-            display="inline-block"
-            verticalAlign="top"
-            width="120px"
-            height="120px"
-          ></Box>
+          <Box backgroundColor={colors.hijau} display="inline-block" verticalAlign="top" width="120px" height="120px" />
           <Box ml={12} display="inline-block" verticalAlign="top">
             <Heading color={colors.black} scale="heading5">
               Hijau
@@ -129,61 +117,61 @@ export const Example = () => (
             <Heading color={colors.black} scale="heading5" my={15}>
               Biru
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.biru05} />
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Hitam
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam05} />
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Putih
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.putih05} />
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Orange
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.orange05} />
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Merah
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.merah05} />
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Hijau
             </Heading>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau01}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau02}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau03}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau04}></Box>
-            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau05}></Box>
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau01} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau02} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau03} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau04} />
+            <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau05} />
           </Box>
         </Box>
       </ComponentBlock>

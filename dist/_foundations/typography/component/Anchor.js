@@ -2,8 +2,9 @@ import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { themeProps } from '../../../Theme';
 import Text from './Text';
+
 const AnchorRoot = Text.withComponent('a');
-const Anchor = styled(AnchorRoot) `
+const Anchor = styled(AnchorRoot)`
   color: ${themeGet('colors.link', themeProps.colors.biru)};
   &:hover,
   &:focus {
@@ -13,4 +14,4 @@ const Anchor = styled(AnchorRoot) `
 `;
 Anchor.displayName = 'Link';
 export default Anchor;
-//# sourceMappingURL=Anchor.js.map
+// # sourceMappingURL=Anchor.js.map

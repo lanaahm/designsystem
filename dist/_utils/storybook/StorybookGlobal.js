@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 import { colors } from '../variables';
-const StorybookGlobal = createGlobalStyle `
+
+const StorybookGlobal = createGlobalStyle`
   body {
     background-color: ${colors.white};
   }
 `;
 export default StorybookGlobal;
-//# sourceMappingURL=StorybookGlobal.js.map
+// # sourceMappingURL=StorybookGlobal.js.map

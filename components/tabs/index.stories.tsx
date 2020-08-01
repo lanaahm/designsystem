@@ -1,13 +1,12 @@
 import * as React from 'react';
-import { SystemWrapper, SystemBlock, ComponentBlock } from '../_utils/storybook';
-import { Stack } from '../_foundations/common';
-import { Tabs, TabPane } from '.';
 import { withKnobs } from '@storybook/addon-knobs';
-import { Box } from '../_foundations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
-import { faHome } from '@fortawesome/free-solid-svg-icons';
-import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
+import { faShoppingBag, faHome, faUserCircle } from '@fortawesome/free-solid-svg-icons';
+
+import { Box } from '../_foundations';
+import { Tabs, TabPane } from '.';
+import { Stack } from '../_foundations/common';
+import { SystemWrapper, SystemBlock, ComponentBlock } from '../_utils/storybook';
 
 const readme = require('./README.md');
 
@@ -26,19 +25,19 @@ export const Example = () => (
       <ComponentBlock title="" withBackground pd="0">
         <Box display="grid" width="100%" gridGap="30px" gridTemplateColumns="repeat(3,1fr)">
           <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
+            <TabPane tab="Tab 1" key="1" />
+            <TabPane tab="Tab 2" key="2" />
+            <TabPane tab="Tab 3" key="3" disabled />
           </Tabs>
           <Tabs defaultActiveKey="1" tabStyle="Ligth">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
+            <TabPane tab="Tab 1" key="1" />
+            <TabPane tab="Tab 2" key="2" />
+            <TabPane tab="Tab 3" key="3" disabled />
           </Tabs>
           <Tabs defaultActiveKey="1" tabStyle="Darkk">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
+            <TabPane tab="Tab 1" key="1" />
+            <TabPane tab="Tab 2" key="2" />
+            <TabPane tab="Tab 3" key="3" disabled />
           </Tabs>
         </Box>
       </ComponentBlock>
@@ -52,7 +51,7 @@ export const Example = () => (
                 </span>
               }
               key="1"
-            ></TabPane>
+            />
             <TabPane
               tab={
                 <span>
@@ -60,7 +59,7 @@ export const Example = () => (
                 </span>
               }
               key="2"
-            ></TabPane>
+            />
             <TabPane
               tab={
                 <span>
@@ -68,13 +67,13 @@ export const Example = () => (
                 </span>
               }
               key="3"
-            ></TabPane>
+            />
           </Tabs>
           <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3"></TabPane>
-            <TabPane tab="Tab 4" key="4" disabled></TabPane>
+            <TabPane tab="Tab 1" key="1" />
+            <TabPane tab="Tab 2" key="2" />
+            <TabPane tab="Tab 3" key="3" />
+            <TabPane tab="Tab 4" key="4" disabled />
           </Tabs>
         </Box>
       </ComponentBlock>
@@ -89,7 +88,7 @@ export const Example = () => (
                 </span>
               }
               key="1"
-            ></TabPane>
+            />
             <TabPane
               tab={
                 <span className="icon-with-text">
@@ -98,7 +97,7 @@ export const Example = () => (
                 </span>
               }
               key="2"
-            ></TabPane>
+            />
             <TabPane
               tab={
                 <span className="icon-with-text">
@@ -107,13 +106,13 @@ export const Example = () => (
                 </span>
               }
               key="3"
-            ></TabPane>
+            />
           </Tabs>
           <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3"></TabPane>
-            <TabPane tab="Tab 4" key="4" disabled></TabPane>
+            <TabPane tab="Tab 1" key="1" />
+            <TabPane tab="Tab 2" key="2" />
+            <TabPane tab="Tab 3" key="3" />
+            <TabPane tab="Tab 4" key="4" disabled />
           </Tabs>
         </Box>
       </ComponentBlock>

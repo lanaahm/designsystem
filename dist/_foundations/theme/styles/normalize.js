@@ -1,5 +1,6 @@
 import { css } from 'styled-components';
-const normalize = css `
+
+const normalize = css`
   /* modern-normalize v0.6.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 
   /*
@@ -54,16 +55,8 @@ const normalize = css `
   */
 
   body {
-    font-family:
-      system-ui,
-      -apple-system, /* Firefox supports this but not yet \`system-ui\` */
-      'Segoe UI',
-      Roboto,
-      Helvetica,
-      Arial,
-      sans-serif,
-      'Apple Color Emoji',
-      'Segoe UI Emoji';
+    font-family: system-ui, -apple-system, /* Firefox supports this but not yet \`system-ui\` */'Segoe UI', Roboto,
+      Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
   }
 
   /*
@@ -110,12 +103,7 @@ const normalize = css `
   kbd,
   samp,
   pre {
-    font-family:
-      SFMono-Regular,
-      Consolas,
-      'Liberation Mono',
-      Menlo,
-      monospace; /* 1 */
+    font-family: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace; /* 1 */
     font-size: 1em; /* 2 */
   }
 
@@ -174,7 +162,8 @@ const normalize = css `
   */
 
   button,
-  select { /* 1 */
+  select {
+    /* 1 */
     text-transform: none;
   }
 
@@ -287,4 +276,4 @@ const normalize = css `
   }
 `;
 export default normalize;
-//# sourceMappingURL=normalize.js.map
+// # sourceMappingURL=normalize.js.map

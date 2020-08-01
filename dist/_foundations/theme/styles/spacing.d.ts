@@ -1,3 +1,3 @@
-declare const spacing: import("styled-components").FlattenSimpleInterpolation;
+declare const spacing: import('styled-components').FlattenSimpleInterpolation;
 export default spacing;
-//# sourceMappingURL=spacing.d.ts.map
+// # sourceMappingURL=spacing.d.ts.map

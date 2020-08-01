@@ -1,3 +1,3 @@
-declare const base: import("styled-components").FlattenSimpleInterpolation;
+declare const base: import('styled-components').FlattenSimpleInterpolation;
 export default base;
-//# sourceMappingURL=base.d.ts.map
+// # sourceMappingURL=base.d.ts.map

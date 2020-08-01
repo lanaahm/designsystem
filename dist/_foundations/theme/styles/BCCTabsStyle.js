@@ -1,6 +1,7 @@
 import { css } from 'styled-components';
 import { colors } from '../../../_utils';
-const BCCTabsStyle = css `
+
+const BCCTabsStyle = css`
   //Content Style
   .bcc-tabs-content {
     display: flex;
@@ -268,4 +269,4 @@ const BCCTabsStyle = css `
   }
 `;
 export default BCCTabsStyle;
-//# sourceMappingURL=BCCTabsStyle.js.map
+// # sourceMappingURL=BCCTabsStyle.js.map

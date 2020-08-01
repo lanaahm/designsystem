@@ -21,7 +21,7 @@ const ComponentBlock: React.FC<ComponentBlockProps> = ({
     <Heading color="hitam02" scale={scaleTitle}>
       {title}
     </Heading>
-    <Box backgroundColor={withBackground ? 'white' : undefined} padding={pd ? pd : undefined}>
+    <Box backgroundColor={withBackground ? 'white' : undefined} padding={pd || undefined}>
       {children}
     </Box>
   </Stack>

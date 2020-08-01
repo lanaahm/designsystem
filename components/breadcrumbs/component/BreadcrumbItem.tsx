@@ -13,6 +13,7 @@ export interface BreadcrumbItemProps {
 }
 
 const Entities = require('html-entities').XmlEntities;
+
 const entities = new Entities();
 const Comp = styled('li')<BreadcrumbItemProps>`
   position: relative;

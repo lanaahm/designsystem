@@ -1,2 +1,2 @@
 export * from './component';
-//# sourceMappingURL=index.js.map
+// # sourceMappingURL=index.js.map

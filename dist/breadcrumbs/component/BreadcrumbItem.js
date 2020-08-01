@@ -1,28 +1,32 @@
-var __rest = (this && this.__rest) || function (s, e) {
-    var t = {};
-    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0)
-        t[p] = s[p];
-    if (s != null && typeof Object.getOwnPropertySymbols === "function")
-        for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
-            if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i]))
-                t[p[i]] = s[p[i]];
-        }
-    return t;
-};
 import * as React from 'react';
 import styled from 'styled-components';
 import { themeGet } from '@styled-system/theme-get';
 import { Text } from '../../_foundations';
 import { colors } from '../../_utils';
+
+const __rest =
+  (this && this.__rest) ||
+  function (s, e) {
+    const t = {};
+    for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+    if (s != null && typeof Object.getOwnPropertySymbols === 'function')
+      for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+        if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+      }
+    return t;
+  };
+
 const Entities = require('html-entities').XmlEntities;
+
 const entities = new Entities();
-const Comp = styled('li') `
+const Comp = styled('li')`
   position: relative;
   border: 1px solid transparent;
   background-color: ${themeGet('colors.putih', colors.putih)};
-  color: ${props => props.lastItem
-    ? themeGet('colors.primaryText', colors.primaryText)
-    : themeGet('colors.primaryText01', colors.primaryText01)};
+  color: ${props =>
+    props.lastItem
+      ? themeGet('colors.primaryText', colors.primaryText)
+      : themeGet('colors.primaryText01', colors.primaryText01)};
   cursor: ${props => (props.lastItem ? 'default' : 'pointer')};
   padding: 0 calc(8px + .25rem);
   text-decoration: none;
@@ -59,10 +63,15 @@ const Comp = styled('li') `
     left: -0.25rem;
   }
 `;
-const BreadcrumbItem = (_a) => {
-    var { id, children } = _a, rest = __rest(_a, ["id", "children"]);
-    return (React.createElement(Comp, Object.assign({ key: `breadcumb-item-${id}` }, rest), typeof children === 'string' ? React.createElement(Text, { scale: "body1" }, children) : children));
+const BreadcrumbItem = _a => {
+  const { id, children } = _a;
+  const rest = __rest(_a, ['id', 'children']);
+  return React.createElement(
+    Comp,
+    { key: `breadcumb-item-${id}`, ...rest },
+    typeof children === 'string' ? React.createElement(Text, { scale: 'body1' }, children) : children
+  );
 };
 BreadcrumbItem.displayName = 'BreadcrumbItem';
 export default BreadcrumbItem;
-//# sourceMappingURL=BreadcrumbItem.js.map
+// # sourceMappingURL=BreadcrumbItem.js.map
