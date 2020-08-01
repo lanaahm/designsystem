@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { ComponentBlock, SystemWrapper, SystemBlock } from '../../_utils/storybook';
 import { Box } from '../../_foundations';
 import { Stack } from '../common';
@@ -17,7 +17,7 @@ export default {
 export const Example = () => (
   <SystemBlock>
     <Stack spacing="xl">
-      <ComponentBlock title="Primary colors" scaleTitle="600" withBackground>
+      <ComponentBlock title="Primary colors" scaleTitle="heading5" withBackground>
         <Box display="grid" gridGap="20px" gridTemplateRows="340px" gridTemplateColumns="600px">
           <Box display="flex">
             <Box
@@ -30,11 +30,11 @@ export const Example = () => (
               color={colors.white}
             >
               <Box display="flex" flex="1" flexDirection="column" width="100%" p="20px" background={colors.biru}>
-                <Heading color={colors.white} scale="400">
+                <Heading color={colors.white} scale="heading5">
                   Biru
                 </Heading>
-                <Paragraph scale="300">HEX : {colors.biru}</Paragraph>
-                <Paragraph scale="300">RGB : {colors.biru}</Paragraph>
+                <Paragraph scale="subtitle1">HEX : {colors.biru}</Paragraph>
+                <Paragraph scale="subtitle1">RGB : {colors.biru}</Paragraph>
               </Box>
               <Box flex="0 0 40%" display="flex" flexDirection="column" overflow="hidden">
                 <Box
@@ -46,11 +46,11 @@ export const Example = () => (
                   flexDirection="column"
                   p="20px"
                 >
-                  <Heading color={colors.white} scale="400">
+                  <Heading color={colors.white} scale="heading5">
                     Hitam
                   </Heading>
-                  <Paragraph scale="300">HEX : {colors.hitam}</Paragraph>
-                  <Paragraph scale="300">RGB : {colors.hitam}</Paragraph>
+                  <Paragraph scale="subtitle1">HEX : {colors.hitam}</Paragraph>
+                  <Paragraph scale="subtitle1">RGB : {colors.hitam}</Paragraph>
                 </Box>
                 <Box
                   flex="1 1 auto"
@@ -62,18 +62,18 @@ export const Example = () => (
                   p="20px"
                   color={colors.black}
                 >
-                  <Heading color={colors.black} scale="400">
+                  <Heading color={colors.black} scale="heading5">
                     Putih
                   </Heading>
-                  <Paragraph scale="300">HEX : {colors.putih}</Paragraph>
-                  <Paragraph scale="300">RGB : {colors.putih}</Paragraph>
+                  <Paragraph scale="subtitle1">HEX : {colors.putih}</Paragraph>
+                  <Paragraph scale="subtitle1">RGB : {colors.putih}</Paragraph>
                 </Box>
               </Box>
             </Box>
           </Box>
         </Box>
       </ComponentBlock>
-      <ComponentBlock title="Secondary colors" scaleTitle="600" withBackground>
+      <ComponentBlock title="Secondary colors" scaleTitle="heading5" withBackground>
         <Box mb={24}>
           <Box
             backgroundColor={colors.orange}
@@ -83,11 +83,11 @@ export const Example = () => (
             height="120px"
           ></Box>
           <Box ml={12} display="inline-block" verticalAlign="top">
-            <Heading color={colors.black} scale="400">
+            <Heading color={colors.black} scale="heading5">
               Orange
             </Heading>
-            <Paragraph scale="300">HEX : {colors.orange}</Paragraph>
-            <Paragraph scale="300">RGB : {colors.orange}</Paragraph>
+            <Paragraph scale="subtitle1">HEX : {colors.orange}</Paragraph>
+            <Paragraph scale="subtitle1">RGB : {colors.orange}</Paragraph>
           </Box>
         </Box>
         <Box mb={24}>
@@ -99,11 +99,11 @@ export const Example = () => (
             height="120px"
           ></Box>
           <Box ml={12} display="inline-block" verticalAlign="top">
-            <Heading color={colors.black} scale="400">
+            <Heading color={colors.black} scale="heading5">
               Merah
             </Heading>
-            <Paragraph scale="300">HEX : {colors.merah}</Paragraph>
-            <Paragraph scale="300">RGB : {colors.merah}</Paragraph>
+            <Paragraph scale="subtitle1">HEX : {colors.merah}</Paragraph>
+            <Paragraph scale="subtitle1">RGB : {colors.merah}</Paragraph>
           </Box>
         </Box>
         <Box mb={24}>
@@ -115,18 +115,18 @@ export const Example = () => (
             height="120px"
           ></Box>
           <Box ml={12} display="inline-block" verticalAlign="top">
-            <Heading color={colors.black} scale="400">
+            <Heading color={colors.black} scale="heading5">
               Hijau
             </Heading>
-            <Paragraph scale="300">HEX : {colors.hijau}</Paragraph>
-            <Paragraph scale="300">RGB : {colors.hijau}</Paragraph>
+            <Paragraph scale="subtitle1">HEX : {colors.hijau}</Paragraph>
+            <Paragraph scale="subtitle1">RGB : {colors.hijau}</Paragraph>
           </Box>
         </Box>
       </ComponentBlock>
-      <ComponentBlock title="Saturation dan Shade" scaleTitle="600" withBackground>
+      <ComponentBlock title="Saturation dan Shade" scaleTitle="heading5" withBackground>
         <Box display="grid" width="75%" gridGap="5%" gridTemplateColumns="repeat(3,1fr)" mb="calc(3px + 5%)" mx="auto">
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Biru
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.biru01}></Box>
@@ -136,7 +136,7 @@ export const Example = () => (
             <Box width="100%" height="100%" p={25} backgroundColor={colors.biru05}></Box>
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Hitam
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam01}></Box>
@@ -146,7 +146,7 @@ export const Example = () => (
             <Box width="100%" height="100%" p={25} backgroundColor={colors.hitam05}></Box>
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Putih
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.putih01}></Box>
@@ -156,7 +156,7 @@ export const Example = () => (
             <Box width="100%" height="100%" p={25} backgroundColor={colors.putih05}></Box>
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Orange
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.orange01}></Box>
@@ -166,7 +166,7 @@ export const Example = () => (
             <Box width="100%" height="100%" p={25} backgroundColor={colors.orange05}></Box>
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Merah
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.merah01}></Box>
@@ -176,7 +176,7 @@ export const Example = () => (
             <Box width="100%" height="100%" p={25} backgroundColor={colors.merah05}></Box>
           </Box>
           <Box display="flex" flexDirection="column" width="100%" height="50%">
-            <Heading color={colors.black} scale="400" my={15}>
+            <Heading color={colors.black} scale="heading5" my={15}>
               Hijau
             </Heading>
             <Box width="100%" height="100%" p={25} backgroundColor={colors.hijau01}></Box>

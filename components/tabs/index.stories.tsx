@@ -2,7 +2,7 @@ import * as React from 'react';
 import { SystemWrapper, SystemBlock, ComponentBlock } from '../_utils/storybook';
 import { Stack } from '../_foundations/common';
 import { Tabs, TabPane } from '.';
-import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { Box } from '../_foundations';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';

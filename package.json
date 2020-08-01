@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "scripts": {
     "storybook": "start-storybook -p 9009",
-    "build": "tsc -p"
+    "build": "tsc -p ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
@@ -40,6 +40,7 @@
     "@types/styled-system": "^5.1.9",
     "@types/styled-system__theme-get": "^5.0.0",
     "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.1",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.6.0",
     "react-dom": "^16.13.1",

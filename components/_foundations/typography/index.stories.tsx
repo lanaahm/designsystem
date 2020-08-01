@@ -20,7 +20,7 @@ export default {
 export const Example = () => (
   <SystemBlock>
     <Stack spacing="xl">
-      <ComponentBlock title="Heading 1" scaleTitle="heading1">
+      <ComponentBlock title="Heading 1" scaleTitle="heading6">
         <Heading scale="heading1">Almost before we knew it, we had left the ground</Heading>
       </ComponentBlock>
       <ComponentBlock title="Heading 2" scaleTitle="heading6">

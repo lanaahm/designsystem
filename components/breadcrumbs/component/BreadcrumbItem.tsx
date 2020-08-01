@@ -14,7 +14,7 @@ export interface BreadcrumbItemProps {
 
 const Entities = require('html-entities').XmlEntities;
 const entities = new Entities();
-const Comp = styled('li')`
+const Comp = styled('li')<BreadcrumbItemProps>`
   position: relative;
   border: 1px solid transparent;
   background-color: ${themeGet('colors.putih', colors.putih)};
@@ -62,7 +62,7 @@ const Comp = styled('li')`
 const BreadcrumbItem: React.FC<BreadcrumbItemProps> = ({ id, children, ...rest }) => {
   return (
     <Comp key={`breadcumb-item-${id}`} {...rest}>
-      {typeof children === 'string' ? <Text scale={400}>{children}</Text> : children}
+      {typeof children === 'string' ? <Text scale="body1">{children}</Text> : children}
     </Comp>
   );
 };

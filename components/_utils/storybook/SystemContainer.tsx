@@ -4,7 +4,7 @@ import StoryContainer from './StoryContainer';
 
 interface SystemContainerProps {
   noBackground?: boolean;
-  py?: String;
+  py;
 }
 
 const SystemContainer: React.FC<SystemContainerProps> = ({ children, py, noBackground = false }) => (

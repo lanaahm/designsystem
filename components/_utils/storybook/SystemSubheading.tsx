@@ -13,7 +13,7 @@ const HorizontalRule = styled('hr')<SpaceProps>`
 
 const SystemSubheading: React.FC<SpaceProps> = ({ children, ...rest }) => (
   <Box {...rest}>
-    <Heading scale={600}>{children}</Heading>
+    <Heading scale={"heading3"}>{children}</Heading>
     <HorizontalRule mt="sm" mb={0} />
   </Box>
 );
