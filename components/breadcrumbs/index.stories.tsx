@@ -1,13 +1,13 @@
-import * as React from "react";
-import { SystemWrapper, SystemBlock } from "../_utils/storybook";
-import { Stack } from "../_foundations/common";
-import { Breadcrumbs, BreadcrumbItem } from ".";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import * as React from 'react';
+import { SystemWrapper, SystemBlock } from '../_utils/storybook';
+import { Stack } from '../_foundations/common';
+import { Breadcrumbs, BreadcrumbItem } from '.';
+import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
 
-const readme = require("./README.md");
+const readme = require('./README.md');
 
 export default {
-  title: "Component|Breadcrumbs",
+  title: 'Component|Breadcrumbs',
   component: [Breadcrumbs, BreadcrumbItem],
   decorators: [SystemWrapper, withKnobs],
   parameters: {
@@ -15,27 +15,18 @@ export default {
   },
 };
 
-const groupItem = "Item";
-const groupLastItem = "Last Item";
-const groupSeparator = "Separator";
+const groupItem = 'Item';
+const groupLastItem = 'Last Item';
+const groupSeparator = 'Separator';
 
 export const Example = () => (
   <SystemBlock title="BCC Design System - Breadcrumbs">
     <Stack spacing="xl">
-      <Breadcrumbs
-        separator={select(
-          "Separator",
-          { ">": ">", "/": "/", "|": "|" },
-          ">",
-          groupSeparator
-        )}
-      >
-        <BreadcrumbItem>{text("Item - 1", "BCC", groupItem)}</BreadcrumbItem>
-        <BreadcrumbItem>
-          {text("Item - 2", "Design System", groupItem)}
-        </BreadcrumbItem>
-        <BreadcrumbItem lastItem={boolean("Last Item", true, groupLastItem)}>
-          {text("Item - 3", "Tabs", groupItem)}
+      <Breadcrumbs separator={select('Separator', { '>': '>', '/': '/', '|': '|' }, '>', groupSeparator)}>
+        <BreadcrumbItem>{text('Item - 1', 'BCC', groupItem)}</BreadcrumbItem>
+        <BreadcrumbItem>{text('Item - 2', 'Design System', groupItem)}</BreadcrumbItem>
+        <BreadcrumbItem lastItem={boolean('Last Item', true, groupLastItem)}>
+          {text('Item - 3', 'Tabs', groupItem)}
         </BreadcrumbItem>
       </Breadcrumbs>
     </Stack>

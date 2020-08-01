@@ -24,10 +24,10 @@ module.exports = {
           ],
         },
       }],
-      include: path.resolve(__dirname, '../components'),
+      include: path.resolve(__dirname, '..'),
     });
 
-    config.resolve.extensions.push('.ts', '.tsx', '.js', '.jsx');
+    config.resolve.extensions.push('.ts', '.tsx');
     config.resolve.mainFields = ['browser', 'module', 'main'];
     return config;
   },

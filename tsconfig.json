@@ -1,33 +1,36 @@
 {
   "compilerOptions": {
-    "baseUrl": "./",
-    "paths": {
-      "bccdesignsystem": ["components/index.tsx"],
-      "bccdesignsystem/component/*": ["components/*"]
-    },
-    "allowSyntheticDefaultImports": true,
-    "composite": true,
-    "experimentalDecorators": true,
-    "forceConsistentCasingInFileNames": true,
-    "jsx": "react",
-    "lib": ["dom", "es2015", "es2016", "es2017", "es6"],
+    "outDir": "lib",
     "module": "esnext",
+    "target": "es2015",
+    "lib": ["dom", "es2015", "es2016", "es2017", "es6"],
+    "sourceMap": true,
+    "allowJs": false,
+    "jsx": "react",
     "moduleResolution": "node",
-    "noImplicitAny": false,
+    "rootDir": "./components",
+    "baseUrl": "./components",
+    "forceConsistentCasingInFileNames": true,
     "noImplicitReturns": true,
     "noImplicitThis": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "outDir": "lib",
-    "removeComments": true,
-    "rootDir": "./components",
-    "skipLibCheck": true,
+    "noImplicitAny": false,
     "strictNullChecks": true,
     "suppressImplicitAnyIndexErrors": true,
-    "target": "es6",
+    "noUnusedParameters": true,
+    "declaration": true,
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "paths": {
+      "designsystem": ["components/index.tsx"],
+      "designsystem/es/*": ["components/*"]
+    },
+    "composite": true,
+    "noUnusedLocals": true,
+    "removeComments": true,
+    "skipLibCheck": true,
     "typeRoots": ["@types", "node_modules/@types", "./node_modules/@types"]
   },
-  "references": [],
-  "include": ["components/**/*.ts", "components/**/*.tsx"],
-  "exclude": ["node_modules", "**/lib"]
+  "include": ["components/**/*"],
+  "exclude": ["node_modules", "build", "scripts"]
 }

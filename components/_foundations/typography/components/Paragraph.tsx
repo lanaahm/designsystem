@@ -1,14 +1,10 @@
-import styled from "styled-components";
-import { variant } from "styled-system";
-import shouldForwardProp from "@styled-system/should-forward-prop";
+import styled from 'styled-components';
+import { variant } from 'styled-system';
+import shouldForwardProp from '@styled-system/should-forward-prop';
 
-import { SubtitlehScale } from "../../../Theme";
+import { SubtitlehScale } from '../../../Theme';
 
-import {
-  typographyBase,
-  TypographyBaseProps,
-  shouldForwardTextProp,
-} from "../utils";
+import { typographyBase, TypographyBaseProps, shouldForwardTextProp } from '../utils';
 
 export interface ParagraphProps extends TypographyBaseProps {
   /** Size value of the text. */
@@ -18,13 +14,12 @@ export interface ParagraphProps extends TypographyBaseProps {
 /**
  * Paragraph component provided as a styled component primitive.
  */
-const Paragraph = styled("p").withConfig<ParagraphProps>({
-  shouldForwardProp: (prop) =>
-    shouldForwardProp(prop) && shouldForwardTextProp(prop),
+const Paragraph = styled('p').withConfig<ParagraphProps>({
+  shouldForwardProp: prop => shouldForwardProp(prop) && shouldForwardTextProp(prop),
 })`
   ${variant({
-    prop: "scale",
-    scale: "componentStyles.SubtitlehScale",
+    prop: 'scale',
+    scale: 'componentStyles.SubtitlehScale',
     variants: {
       400: {},
       300: {},
@@ -34,9 +29,9 @@ const Paragraph = styled("p").withConfig<ParagraphProps>({
 `;
 
 Paragraph.defaultProps = {
-  scale: "subtitle1",
+  scale: 'subtitle1',
 };
 
-Paragraph.displayName = "Paragraph";
+Paragraph.displayName = 'Paragraph';
 
 export default Paragraph;

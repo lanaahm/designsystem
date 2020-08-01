@@ -1,6 +1,6 @@
-import { css } from "styled-components";
-import { colors, fonts } from "../../../_utils/variables";
-import BCCTabsStyle from "./BCCTabsStyle";
+import { css } from 'styled-components';
+import { colors, fonts } from '../../../_utils/variables';
+import BCCTabsStyle from './BCCTabsStyle';
 
 const skeleton = `
 .skeleton {
@@ -73,7 +73,7 @@ const base = css`
   body {
     font-family: ${fonts};
     font-weight: 400;
-    background-color: ${colors["bg-secondary"]};
+    background-color: ${colors['bg-secondary']};
     color: ${colors.black};
   }
 
@@ -111,7 +111,7 @@ const base = css`
     display: inline-block;
 
     &::before {
-      content: "......";
+      content: '......';
       display: inline-block;
       width: 10px;
       word-break: break-word;

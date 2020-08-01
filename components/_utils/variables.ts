@@ -1,67 +1,67 @@
-import { transparentize } from "polished";
+import { transparentize } from 'polished';
 
 const PrimaryColors = {
-  biru: "#3498DB",
-  hitam: "#1B1B1B",
-  putih: "#FFFFFF",
-  primaryText: "rgba(20, 48, 69, 1)",
-  primaryText01: "rgba(20, 48, 69, .8)",
+  biru: '#3498DB',
+  hitam: '#1B1B1B',
+  putih: '#FFFFFF',
+  primaryText: 'rgba(20, 48, 69, 1)',
+  primaryText01: 'rgba(20, 48, 69, .8)',
 };
 
 const SecondaryColors = {
-  orange: "#FC642D",
-  orange001: "#FB9E2E",
-  merah: "#E74C3C",
-  hijau: "#2ECC71",
+  orange: '#FC642D',
+  orange001: '#FB9E2E',
+  merah: '#E74C3C',
+  hijau: '#2ECC71',
 };
 const SaturationShadeColors = {
   // Biru
-  biru01: "#2874A6",
-  biru02: "#2E86C1",
-  biru03: "#3498DB",
-  biru04: "#5DADE2",
-  biru05: "#85C1E9",
+  biru01: '#2874A6',
+  biru02: '#2E86C1',
+  biru03: '#3498DB',
+  biru04: '#5DADE2',
+  biru05: '#85C1E9',
 
   // Hitam
-  hitam01: "#0D0D0D",
-  hitam02: "#151515",
-  hitam03: "#1B1B1B",
-  hitam04: "#3E3E3E",
-  hitam05: "#E1E1E1",
+  hitam01: '#0D0D0D',
+  hitam02: '#151515',
+  hitam03: '#1B1B1B',
+  hitam04: '#3E3E3E',
+  hitam05: '#E1E1E1',
 
   // Putih
-  putih01: "#FFFFFF",
-  putih02: "#FFFFFF",
-  putih03: "#FFFFFF",
-  putih04: "#FFFFFF",
-  putih05: "#FFFFFF",
+  putih01: '#FFFFFF',
+  putih02: '#FFFFFF',
+  putih03: '#FFFFFF',
+  putih04: '#FFFFFF',
+  putih05: '#FFFFFF',
 
   // Orange
-  orange01: "#FF4400",
-  orange02: "#FF591D",
-  orange03: "#FC642D",
-  orange04: "#FF895F",
-  orange05: "#FFD2C1",
+  orange01: '#FF4400',
+  orange02: '#FF591D',
+  orange03: '#FC642D',
+  orange04: '#FF895F',
+  orange05: '#FFD2C1',
 
   // Merah
-  merah01: "#943126",
-  merah02: "#CB4335",
-  merah03: "#E74C3C",
-  merah04: "#EC7063",
-  merah05: "#F5B7B1",
+  merah01: '#943126',
+  merah02: '#CB4335',
+  merah03: '#E74C3C',
+  merah04: '#EC7063',
+  merah05: '#F5B7B1',
 
   // Hijau
-  hijau01: "#196F3D",
-  hijau02: "#28B463",
-  hijau03: "#2ECC71",
-  hijau04: "#82E0AA",
-  hijau05: "#ABEBC6",
+  hijau01: '#196F3D',
+  hijau02: '#28B463',
+  hijau03: '#2ECC71',
+  hijau04: '#82E0AA',
+  hijau05: '#ABEBC6',
 };
 
-export const fonts = "Work Sans";
+export const fonts = 'Work Sans';
 export const colors = {
-  white: "#fff",
-  black: "#000",
+  white: '#fff',
+  black: '#000',
 
   ...PrimaryColors,
   ...SecondaryColors,
@@ -108,7 +108,7 @@ export const space = {
   xxxl: 56,
 };
 
-export const breakpoints = ["1024px", "1280px", "1440px", "1600px"];
+export const breakpoints = ['1024px', '1280px', '1440px', '1600px'];
 
 export const mediaQueries = {
   sm: `@media screen and (min-width: ${breakpoints[0]})`,
@@ -127,10 +127,10 @@ export const radiuss = {
 
 /** Legacy box-shadow values. */
 export const shadowsLegacy = {
-  layer100: "0 1px 1px 0 rgba(0, 0, 0, 0.25)",
-  layer200: "0 2px 4px 1px rgba(0, 0, 0, 0.15)",
-  layer300: "0 4px 6px 2px rgba(0, 0, 0, 0.15)",
-  layer400: "0 6px 10px 2px rgba(0, 0, 0, 0.15)",
+  layer100: '0 1px 1px 0 rgba(0, 0, 0, 0.25)',
+  layer200: '0 2px 4px 1px rgba(0, 0, 0, 0.15)',
+  layer300: '0 4px 6px 2px rgba(0, 0, 0, 0.15)',
+  layer400: '0 6px 10px 2px rgba(0, 0, 0, 0.15)',
 };
 
 /** Default box/text shadow separated by layers */
@@ -141,16 +141,16 @@ export const shadows = {
 /** Legacy elevation values. */
 export const elevationLegacy = {
   layer100: {
-    boxShadow: "layer100",
+    boxShadow: 'layer100',
   },
   layer200: {
-    boxShadow: "layer200",
+    boxShadow: 'layer200',
   },
   layer300: {
-    boxShadow: "layer300",
+    boxShadow: 'layer300',
   },
   layer400: {
-    boxShadow: "layer400",
+    boxShadow: 'layer400',
   },
 };
 
@@ -160,7 +160,7 @@ const shadowColor = transparentize(0.85, colors.hitam04);
 export const elevation = {
   ...elevationLegacy,
   level1: {
-    boxShadow: "none",
+    boxShadow: 'none',
   },
   level2: {
     boxShadow: `0px 2px 6px ${shadowColor};`,

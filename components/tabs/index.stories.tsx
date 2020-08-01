@@ -1,22 +1,18 @@
-import * as React from "react";
-import {
-  SystemWrapper,
-  SystemBlock,
-  ComponentBlock,
-} from "../_utils/storybook";
-import { Stack } from "../_foundations/common";
-import { Tabs, TabPane } from ".";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
-import { Box } from "../_foundations";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-solid-svg-icons";
+import * as React from 'react';
+import { SystemWrapper, SystemBlock, ComponentBlock } from '../_utils/storybook';
+import { Stack } from '../_foundations/common';
+import { Tabs, TabPane } from '.';
+import { withKnobs, text, boolean, select } from '@storybook/addon-knobs';
+import { Box } from '../_foundations';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingBag } from '@fortawesome/free-solid-svg-icons';
+import { faHome } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle } from '@fortawesome/free-solid-svg-icons';
 
-const readme = require("./README.md");
+const readme = require('./README.md');
 
 export default {
-  title: "Component|Tabs",
+  title: 'Component|Tabs',
   component: [Tabs, TabPane],
   decorators: [SystemWrapper, withKnobs],
   parameters: {
@@ -28,12 +24,7 @@ export const Example = () => (
   <SystemBlock title="BCC Design System - Tabs">
     <Stack spacing="xl">
       <ComponentBlock title="" withBackground pd="0">
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="repeat(3,1fr)"
-        >
+        <Box display="grid" width="100%" gridGap="30px" gridTemplateColumns="repeat(3,1fr)">
           <Tabs defaultActiveKey="1" tabStyle="Primary">
             <TabPane tab="Tab 1" key="1"></TabPane>
             <TabPane tab="Tab 2" key="2"></TabPane>
@@ -52,12 +43,7 @@ export const Example = () => (
         </Box>
       </ComponentBlock>
       <ComponentBlock title="" withBackground pd="0">
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="auto 2fr"
-        >
+        <Box display="grid" width="100%" gridGap="30px" gridTemplateColumns="auto 2fr">
           <Tabs defaultActiveKey="1" tabStyle="Darkk">
             <TabPane
               tab={
@@ -93,12 +79,7 @@ export const Example = () => (
         </Box>
       </ComponentBlock>
       <ComponentBlock title="" withBackground>
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="auto 2fr"
-        >
+        <Box display="grid" width="100%" gridGap="30px" gridTemplateColumns="auto 2fr">
           <Tabs defaultActiveKey="1" tabStyle="Darkk">
             <TabPane
               tab={

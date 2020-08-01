@@ -1,5 +1,5 @@
-import { css } from "styled-components";
-import { colors } from "../../../_utils";
+import { css } from 'styled-components';
+import { colors } from '../../../_utils';
 
 const BCCTabsStyle = css`
   //Content Style

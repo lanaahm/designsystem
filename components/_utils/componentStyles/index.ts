@@ -1,5 +1,5 @@
-import boxShadow from "./boxShadow";
-import { heading, subtitle, text } from "./typography";
+import boxShadow from './boxShadow';
+import { heading, subtitle, text } from './typography';
 
 const componentStyles = {
   boxShadow,

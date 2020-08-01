@@ -1,9 +1,9 @@
-import { css } from "styled-components";
-import { spaceLegacy } from "../../../_utils";
+import { css } from 'styled-components';
+import { spaceLegacy } from '../../../_utils';
 
 const spacing = css`
   ${[1, 2, 3, 4, 5, 6, 7, 8].map(
-    (val) => css`
+    val => css`
       .m-${val} {
         margin: ${spaceLegacy[`space${val}`]} !important;
       }

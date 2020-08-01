@@ -1,8 +1,8 @@
-import { createGlobalStyle } from "styled-components";
-import normalize from "../styles/normalize";
-import base from "../styles/base";
+import { createGlobalStyle } from 'styled-components';
+import normalize from '../styles/normalize';
+import base from '../styles/base';
 
-require("@openfonts/work-sans_all");
+require('@openfonts/work-sans_all');
 
 const GlobalStyles = createGlobalStyle`
     ${normalize}

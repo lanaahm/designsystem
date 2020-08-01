@@ -1,7 +1,7 @@
-import * as React from "react";
-import styled from "styled-components";
-import toArray from "rc-util/lib/Children/toArray";
-import PropTypes from "prop-types";
+import * as React from 'react';
+import styled from 'styled-components';
+import toArray from 'rc-util/lib/Children/toArray';
+import PropTypes from 'prop-types';
 
 export interface BreadcrumbsProps {
   separator?: string;
@@ -9,22 +9,18 @@ export interface BreadcrumbsProps {
   style?: React.CSSProperties;
 }
 
-const Nav = styled("nav")`
+const Nav = styled('nav')`
   display: block;
 `;
 
-const Ol = styled("ol")`
+const Ol = styled('ol')`
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 `;
 
-const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
-  separator = "/",
-  children,
-  ...rest
-}) => {
+const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = '/', children, ...rest }) => {
   let crumbs;
   crumbs = toArray(children).map((element: any, index) => {
     return React.cloneElement(element, {
@@ -42,9 +38,9 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({
 };
 
 Breadcrumbs.propTypes = {
-  separator: PropTypes.oneOf(["/", "|", ">"]).isRequired,
+  separator: PropTypes.oneOf(['/', '|', '>']).isRequired,
 };
 
-Breadcrumbs.displayName = "Breadcrumbs";
+Breadcrumbs.displayName = 'Breadcrumbs';
 
 export default Breadcrumbs;
