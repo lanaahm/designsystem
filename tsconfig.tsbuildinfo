@@ -606,94 +606,39 @@
         "signature": "c04ab4166648b44707994b479330e35196a0634485815b1a84d9e959054b79d9",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/box/components/box.tsx": {
+      "./components/_foundations/box/component/box.tsx": {
         "version": "699fdee4dbfa7e203a968ae09400d87f6ee2b62bd9b3fbbdc124407488535101",
         "signature": "9075c05e77395f391be33c67f3c45d7d5be1034f6f8118341025b963ddba4e5a",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/box/components/index.ts": {
+      "./components/_foundations/box/component/index.ts": {
         "version": "2652f170c3987bfeb7b894333f13d4015c24d4d0922df378ecb307c4146de4b7",
         "signature": "aa5582865e8f9de8aab4e463808856dd0537cbac966e56088677d74338f9ce9f",
         "affectsGlobalScope": false
       },
       "./components/_foundations/box/index.ts": {
-        "version": "3da9e2eadb921ef41511184d5059ff1529ed9d9f456d9d8bf056bd738970509a",
-        "signature": "68af45aa176e01dbc57e02f100caf9474355eb7299dc3b82a950a35679b2942a",
+        "version": "08fc370cf089490f580106cb695af06f7cc82abec0d77b3103452ecc3586678c",
+        "signature": "eb93955f1fa2230af7c5cb6bbdc2a0cb6921e481b8b5ed7b690eafe2e51be3bf",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/typography/utils/shouldforwardtextprop.ts": {
-        "version": "b7261f4469deab537dca6f7fbcc8cfe02a9ee624f133046ce7ffc6387f701f26",
-        "signature": "971da183ca5e45f45bf686f208b50e057cd1d2cd147a0a4b7e5db3a1fbe9f2cc",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/utils/typographybase.tsx": {
-        "version": "9f9871c229b01be0a659bd0cc8eedc802e523044785c9f12fca6a3fa1049a824",
-        "signature": "8ba4cc31964dfa2dacaa013d4b0f6a4e3bf148bb25b532ca77b53bebb8f1aba4",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/utils/index.ts": {
-        "version": "2bef12d65fd8f86a39d77cabfade8ee58d8c99cc5e22b1fb546531b67e0eb22d",
-        "signature": "78aebd46bc619e7abbd69e51893585d3dc7dd8a61def03aa0007de32504b6a8b",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/components/heading.tsx": {
-        "version": "dc1a8ff9ebc075ffb0e52de4534e39ad06cb62f24ec2a10d2c43d8810d5981e5",
-        "signature": "ddded1187a405ee153432765512a633d016dd3a3c419d14ecd5900ef39bf3e7c",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/@types/styled-system__theme-get/index.d.ts": {
-        "version": "08cfe6d225bd63a369765e930f1f6d071b8fb890ef0b3b31f183b611256ebc7b",
-        "signature": "08cfe6d225bd63a369765e930f1f6d071b8fb890ef0b3b31f183b611256ebc7b",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/components/text.tsx": {
-        "version": "a55a3ae496c502a40675e14c73efe1e55cbc4037776044463d9dc575a538c2a7",
-        "signature": "52e22d65faa3cbf3818528c2a04ea17df39645d406366d222801dd5b71b3613f",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/components/anchor.tsx": {
-        "version": "9874d995a162937cfca71df180a148921842de21f7944404bd278782d3b10d6f",
-        "signature": "3025be78e6f2e3735fec98432fd09b6241a11733fbfd98ac466ef68050bc03f0",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/components/paragraph.tsx": {
-        "version": "ff5e3e8a3eae223e8d93b6a782f266309a99a869f14ed80697ba7db0fdec69e8",
-        "signature": "d07f53860d4102478e57cdd3ab30a8dc897ee1c2ce4be48a2548b0ccf16850a7",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/typography/index.ts": {
-        "version": "44c627322eb229e642314ad5de29894ae877e2abfa9630edf6c130cc6ff5316e",
-        "signature": "5a37daaf2c153ac09585b1e84d9bb1647f6a96876241a537e67d5ff277e0fbbe",
-        "affectsGlobalScope": false
-      },
-      "./node_modules/rc-util/lib/children/toarray.d.ts": {
-        "version": "8bfec49e2f648acc344a3d57c6d7b5a1a1e142a14d4dc29cc6ca955a37674049",
-        "signature": "8bfec49e2f648acc344a3d57c6d7b5a1a1e142a14d4dc29cc6ca955a37674049",
-        "affectsGlobalScope": false
-      },
-      "./components/breadcrumbs/component/breadcrumbs.tsx": {
-        "version": "18214b66841ad70141bb16a19484c59dcc926e9d791c72af0137a2d12b6fc36b",
-        "signature": "196c22315c35223e46e038de4da266a106f9ae6280e782af1400cc6dc0626511",
-        "affectsGlobalScope": false
-      },
-      "./components/_foundations/common/components/stack/stack.tsx": {
+      "./components/_foundations/common/component/stack/stack.tsx": {
         "version": "76ccaa99fbb1af9dc0f671c18f97b1e91c340a73cec43eb7207637d201866f08",
         "signature": "d624be35dec1bab4f8a425b0217cc5ce3cbcb229bb79f1c1a872d0845258dc66",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/common/components/stack/index.ts": {
+      "./components/_foundations/common/component/stack/index.ts": {
         "version": "9ab94b9f954a3dd057049932f2c9922c6e0d1f8b04f7e511a565ed4f6fbcce45",
         "signature": "34ea81a2d5dd25f6fb7e520eebf7d179d192c20ac526bcc4d4a53d74c24e625c",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/common/components/index.ts": {
+      "./components/_foundations/common/component/index.ts": {
         "version": "93a15dcc792378badc1666fdba3bf81a5b85bded00b8c524353bab5f98b85e8b",
         "signature": "f8cfab828dd170ad48c074e3b696cd1d6facedfce514bc6612b3371073906d0c",
         "affectsGlobalScope": false
       },
       "./components/_foundations/common/index.ts": {
-        "version": "3da9e2eadb921ef41511184d5059ff1529ed9d9f456d9d8bf056bd738970509a",
-        "signature": "68af45aa176e01dbc57e02f100caf9474355eb7299dc3b82a950a35679b2942a",
+        "version": "08fc370cf089490f580106cb695af06f7cc82abec0d77b3103452ecc3586678c",
+        "signature": "eb93955f1fa2230af7c5cb6bbdc2a0cb6921e481b8b5ed7b690eafe2e51be3bf",
         "affectsGlobalScope": false
       },
       "./components/_foundations/theme/styles/normalize.ts": {
@@ -711,24 +656,79 @@
         "signature": "6f2adb7afde4b400a742fe4092e4140b34af1e3d9ea9e5592c4df1c26a6af268",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/theme/components/globalstyles.ts": {
+      "./components/_foundations/theme/component/globalstyles.ts": {
         "version": "a25b760a6c91752b7b4b1cc0336305aa71be95b5e0b74fdc55f3b613440165df",
         "signature": "69868f543f1d1b0aa103c4d4e29ca1498df9c7a3c3a3e9c69a8b058a21992746",
         "affectsGlobalScope": false
       },
-      "./components/_foundations/theme/components/provider.tsx": {
+      "./components/_foundations/theme/component/provider.tsx": {
         "version": "02e1f00337aee94c7975abbaadff53106dea49e263895135f53f865bc45c82dd",
         "signature": "8b5e9aaf686a3a02dee519f7d137bdd913760ccc770e37f768f03a272009441e",
         "affectsGlobalScope": false
       },
       "./components/_foundations/theme/index.ts": {
-        "version": "e54ccb1690f8b45b4722ece332d3aa1906bd6831d878594cf2e61e2f204a420f",
-        "signature": "3ba3c587c4df937177b727ab0512db39c913fd60c31f1ec6cc979a56910918b6",
+        "version": "1523d1182dab36e0b091862f5232a8652cfcdf10929258735a88a5875d97786c",
+        "signature": "0b7c9d6e6818aa6548ef89e2104ae98314a6f56ea741e428dab6af102dc66225",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/utils/shouldforwardtextprop.ts": {
+        "version": "b7261f4469deab537dca6f7fbcc8cfe02a9ee624f133046ce7ffc6387f701f26",
+        "signature": "971da183ca5e45f45bf686f208b50e057cd1d2cd147a0a4b7e5db3a1fbe9f2cc",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/utils/typographybase.tsx": {
+        "version": "9f9871c229b01be0a659bd0cc8eedc802e523044785c9f12fca6a3fa1049a824",
+        "signature": "8ba4cc31964dfa2dacaa013d4b0f6a4e3bf148bb25b532ca77b53bebb8f1aba4",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/utils/index.ts": {
+        "version": "2bef12d65fd8f86a39d77cabfade8ee58d8c99cc5e22b1fb546531b67e0eb22d",
+        "signature": "78aebd46bc619e7abbd69e51893585d3dc7dd8a61def03aa0007de32504b6a8b",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/component/heading.tsx": {
+        "version": "dc1a8ff9ebc075ffb0e52de4534e39ad06cb62f24ec2a10d2c43d8810d5981e5",
+        "signature": "ddded1187a405ee153432765512a633d016dd3a3c419d14ecd5900ef39bf3e7c",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/styled-system__theme-get/index.d.ts": {
+        "version": "08cfe6d225bd63a369765e930f1f6d071b8fb890ef0b3b31f183b611256ebc7b",
+        "signature": "08cfe6d225bd63a369765e930f1f6d071b8fb890ef0b3b31f183b611256ebc7b",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/component/text.tsx": {
+        "version": "a55a3ae496c502a40675e14c73efe1e55cbc4037776044463d9dc575a538c2a7",
+        "signature": "52e22d65faa3cbf3818528c2a04ea17df39645d406366d222801dd5b71b3613f",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/component/anchor.tsx": {
+        "version": "9874d995a162937cfca71df180a148921842de21f7944404bd278782d3b10d6f",
+        "signature": "3025be78e6f2e3735fec98432fd09b6241a11733fbfd98ac466ef68050bc03f0",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/component/paragraph.tsx": {
+        "version": "ff5e3e8a3eae223e8d93b6a782f266309a99a869f14ed80697ba7db0fdec69e8",
+        "signature": "d07f53860d4102478e57cdd3ab30a8dc897ee1c2ce4be48a2548b0ccf16850a7",
+        "affectsGlobalScope": false
+      },
+      "./components/_foundations/typography/index.ts": {
+        "version": "33ff7845d9c4fa41eca4158ae9e105b4b2e9a5420465a956d075ab5a0ff56d5d",
+        "signature": "b344aa43cd1114052a02973149307b917ee9dbac89805b8e8020a9cbf7ea61df",
         "affectsGlobalScope": false
       },
       "./components/_foundations/index.ts": {
-        "version": "d92687057aee8977856735285fe5e54646f92f39191477736578e2f38e83282d",
+        "version": "9f0a47b89f78644741d4d1705618abd34356153f28f5e0075b82602909419c98",
         "signature": "986cb938ce3b98e307e37f253762c392f2287171e1f75448a4453074b16c0ffa",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/rc-util/lib/children/toarray.d.ts": {
+        "version": "8bfec49e2f648acc344a3d57c6d7b5a1a1e142a14d4dc29cc6ca955a37674049",
+        "signature": "8bfec49e2f648acc344a3d57c6d7b5a1a1e142a14d4dc29cc6ca955a37674049",
+        "affectsGlobalScope": false
+      },
+      "./components/breadcrumbs/component/breadcrumbs.tsx": {
+        "version": "18214b66841ad70141bb16a19484c59dcc926e9d791c72af0137a2d12b6fc36b",
+        "signature": "196c22315c35223e46e038de4da266a106f9ae6280e782af1400cc6dc0626511",
         "affectsGlobalScope": false
       },
       "./components/breadcrumbs/component/breadcrumbitem.tsx": {
@@ -772,8 +772,8 @@
         "affectsGlobalScope": false
       },
       "./components/index.tsx": {
-        "version": "7a322fc06fa9aa9d8eb78b7fe07bab99a6bd59945113927142344ad9f06e0482",
-        "signature": "ad6c8398d1d2a442956ee47b7b80cf33828b868d328e663e0eaad9f6791b80c9",
+        "version": "66c2777b366a832bd3663b398551309f9378d8e76f9bc76a61dbfd91671a13d8",
+        "signature": "6c8582df3e324c595a590e117311902d4637f2bde58b58fc1075bbb697d0718d",
         "affectsGlobalScope": false
       },
       "./components/_utils/storybook/componentblock.tsx": {
@@ -1586,6 +1586,11 @@
         "signature": "f0cb4b3ab88193e3e51e9e2622e4c375955003f1f81239d72c5b7a95415dad3e",
         "affectsGlobalScope": false
       },
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": {
+        "version": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
+        "signature": "725d9be2fd48440256f4deb00649adffdbc5ecd282b09e89d4e200663792c34c",
+        "affectsGlobalScope": false
+      },
       "./node_modules/@types/html-minifier-terser/index.d.ts": {
         "version": "7505ea08af82f5d51c975a04d16fe0fc0bd34f3e22958acf2bc06959c53c64cc",
         "signature": "7505ea08af82f5d51c975a04d16fe0fc0bd34f3e22958acf2bc06959c53c64cc",
@@ -1599,6 +1604,11 @@
       "./node_modules/@types/json-schema/index.d.ts": {
         "version": "ecdf947a5111318568ba99f2a87b8498382d8871207f1bc6271ff3b9536a2448",
         "signature": "ecdf947a5111318568ba99f2a87b8498382d8871207f1bc6271ff3b9536a2448",
+        "affectsGlobalScope": false
+      },
+      "./node_modules/@types/json5/index.d.ts": {
+        "version": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
+        "signature": "96d14f21b7652903852eef49379d04dbda28c16ed36468f8c9fa08f7c14c9538",
         "affectsGlobalScope": false
       },
       "./node_modules/@types/npmlog/index.d.ts": {
@@ -1698,7 +1708,7 @@
       }
     },
     "options": {
-      "outDir": "./lib",
+      "outDir": "./dist",
       "module": 99,
       "target": 2,
       "lib": [
@@ -1760,7 +1770,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./components/_foundations/box/components/box.tsx": [
+      "./components/_foundations/box/component/box.tsx": [
         "./@types/styled-system__should-forward-prop/index.d.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1770,15 +1780,15 @@
         "./node_modules/@types/styled-components/ts3.7/index.d.ts",
         "./node_modules/@types/styled-system/index.d.ts"
       ],
-      "./components/_foundations/box/components/index.ts": [
-        "./components/_foundations/box/components/box.tsx",
+      "./components/_foundations/box/component/index.ts": [
+        "./components/_foundations/box/component/box.tsx",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
       "./components/_foundations/box/index.ts": [
-        "./components/_foundations/box/components/index.ts",
+        "./components/_foundations/box/component/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -1796,21 +1806,21 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/react/index.d.ts"
       ],
-      "./components/_foundations/common/components/index.ts": [
-        "./components/_foundations/common/components/stack/index.ts",
+      "./components/_foundations/common/component/index.ts": [
+        "./components/_foundations/common/component/stack/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./components/_foundations/common/components/stack/index.ts": [
-        "./components/_foundations/common/components/stack/stack.tsx",
+      "./components/_foundations/common/component/stack/index.ts": [
+        "./components/_foundations/common/component/stack/stack.tsx",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./components/_foundations/common/components/stack/stack.tsx": [
+      "./components/_foundations/common/component/stack/stack.tsx": [
         "./components/_foundations/box/index.ts",
         "./components/theme.tsx",
         "./node_modules/@types/node/fs.d.ts",
@@ -1820,7 +1830,7 @@
         "./node_modules/@types/react/index.d.ts"
       ],
       "./components/_foundations/common/index.ts": [
-        "./components/_foundations/common/components/index.ts",
+        "./components/_foundations/common/component/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -1836,7 +1846,7 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./components/_foundations/theme/components/globalstyles.ts": [
+      "./components/_foundations/theme/component/globalstyles.ts": [
         "./components/_foundations/theme/styles/base.ts",
         "./components/_foundations/theme/styles/normalize.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -1845,8 +1855,8 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/theme/components/provider.tsx": [
-        "./components/_foundations/theme/components/globalstyles.ts",
+      "./components/_foundations/theme/component/provider.tsx": [
+        "./components/_foundations/theme/component/globalstyles.ts",
         "./components/theme.tsx",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1855,8 +1865,8 @@
         "./node_modules/@types/react/index.d.ts"
       ],
       "./components/_foundations/theme/index.ts": [
-        "./components/_foundations/theme/components/globalstyles.ts",
-        "./components/_foundations/theme/components/provider.tsx",
+        "./components/_foundations/theme/component/globalstyles.ts",
+        "./components/_foundations/theme/component/provider.tsx",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -1894,8 +1904,8 @@
         "./node_modules/@types/node/util.d.ts",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/typography/components/anchor.tsx": [
-        "./components/_foundations/typography/components/text.tsx",
+      "./components/_foundations/typography/component/anchor.tsx": [
+        "./components/_foundations/typography/component/text.tsx",
         "./components/theme.tsx",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -1905,7 +1915,7 @@
         "./node_modules/@types/styled-components/ts3.7/index.d.ts",
         "./node_modules/@types/styled-system__theme-get/index.d.ts"
       ],
-      "./components/_foundations/typography/components/heading.tsx": [
+      "./components/_foundations/typography/component/heading.tsx": [
         "./@types/styled-system__should-forward-prop/index.d.ts",
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
@@ -1916,7 +1926,7 @@
         "./node_modules/@types/styled-components/ts3.7/index.d.ts",
         "./node_modules/@types/styled-system/index.d.ts"
       ],
-      "./components/_foundations/typography/components/paragraph.tsx": [
+      "./components/_foundations/typography/component/paragraph.tsx": [
         "./@types/styled-system__should-forward-prop/index.d.ts",
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
@@ -1927,7 +1937,7 @@
         "./node_modules/@types/styled-components/ts3.7/index.d.ts",
         "./node_modules/@types/styled-system/index.d.ts"
       ],
-      "./components/_foundations/typography/components/text.tsx": [
+      "./components/_foundations/typography/component/text.tsx": [
         "./@types/styled-system__should-forward-prop/index.d.ts",
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
@@ -1950,10 +1960,10 @@
         "./node_modules/@types/react/index.d.ts"
       ],
       "./components/_foundations/typography/index.ts": [
-        "./components/_foundations/typography/components/anchor.tsx",
-        "./components/_foundations/typography/components/heading.tsx",
-        "./components/_foundations/typography/components/paragraph.tsx",
-        "./components/_foundations/typography/components/text.tsx",
+        "./components/_foundations/typography/component/anchor.tsx",
+        "./components/_foundations/typography/component/heading.tsx",
+        "./components/_foundations/typography/component/paragraph.tsx",
+        "./components/_foundations/typography/component/text.tsx",
         "./components/_foundations/typography/utils/index.ts",
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
@@ -2148,8 +2158,8 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./components/index.tsx": [
-        "./components/_foundations/box/index.ts",
-        "./components/_foundations/typography/index.ts",
+        "./components/_foundations/index.ts",
+        "./components/_utils/index.ts",
         "./components/breadcrumbs/index.ts",
         "./components/tabs/index.ts",
         "./node_modules/@types/node/fs.d.ts",
@@ -2752,6 +2762,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/@types/history/createbrowserhistory.d.ts": [
         "./node_modules/@types/history/domutils.d.ts",
         "./node_modules/@types/history/index.d.ts",
@@ -2827,6 +2843,12 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./node_modules/@types/json-schema/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/json5/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -4412,34 +4434,34 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
-      "./components/_foundations/box/components/box.tsx": [
+      "./components/_foundations/box/component/box.tsx": [
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts",
         "./node_modules/@types/styled-system/index.d.ts"
       ],
-      "./components/_foundations/box/components/index.ts": [
-        "./components/_foundations/box/components/box.tsx"
+      "./components/_foundations/box/component/index.ts": [
+        "./components/_foundations/box/component/box.tsx"
       ],
       "./components/_foundations/box/index.ts": [
-        "./components/_foundations/box/components/index.ts"
+        "./components/_foundations/box/component/index.ts"
       ],
       "./components/_foundations/color/index.stories.tsx": [
         "./node_modules/@storybook/addons/dist/public_api.d.ts",
         "./node_modules/@storybook/react/dist/client/preview/types.d.ts"
       ],
-      "./components/_foundations/common/components/index.ts": [
-        "./components/_foundations/common/components/stack/index.ts"
+      "./components/_foundations/common/component/index.ts": [
+        "./components/_foundations/common/component/stack/index.ts"
       ],
-      "./components/_foundations/common/components/stack/index.ts": [
-        "./components/_foundations/common/components/stack/stack.tsx"
+      "./components/_foundations/common/component/stack/index.ts": [
+        "./components/_foundations/common/component/stack/stack.tsx"
       ],
-      "./components/_foundations/common/components/stack/stack.tsx": [
+      "./components/_foundations/common/component/stack/stack.tsx": [
         "./components/_foundations/box/index.ts",
         "./components/theme.tsx",
         "./node_modules/@types/react/index.d.ts"
       ],
       "./components/_foundations/common/index.ts": [
-        "./components/_foundations/common/components/index.ts"
+        "./components/_foundations/common/component/index.ts"
       ],
       "./components/_foundations/index.ts": [
         "./components/_foundations/box/index.ts",
@@ -4447,15 +4469,15 @@
         "./components/_foundations/theme/index.ts",
         "./components/_foundations/typography/index.ts"
       ],
-      "./components/_foundations/theme/components/globalstyles.ts": [
+      "./components/_foundations/theme/component/globalstyles.ts": [
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/theme/components/provider.tsx": [
+      "./components/_foundations/theme/component/provider.tsx": [
         "./node_modules/@types/react/index.d.ts"
       ],
       "./components/_foundations/theme/index.ts": [
-        "./components/_foundations/theme/components/globalstyles.ts",
-        "./components/_foundations/theme/components/provider.tsx"
+        "./components/_foundations/theme/component/globalstyles.ts",
+        "./components/_foundations/theme/component/provider.tsx"
       ],
       "./components/_foundations/theme/styles/base.ts": [
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
@@ -4469,22 +4491,22 @@
       "./components/_foundations/theme/styles/spacing.ts": [
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/typography/components/anchor.tsx": [
-        "./components/_foundations/typography/components/text.tsx",
+      "./components/_foundations/typography/component/anchor.tsx": [
+        "./components/_foundations/typography/component/text.tsx",
         "./node_modules/@types/react/index.d.ts",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/typography/components/heading.tsx": [
+      "./components/_foundations/typography/component/heading.tsx": [
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/typography/components/paragraph.tsx": [
+      "./components/_foundations/typography/component/paragraph.tsx": [
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
-      "./components/_foundations/typography/components/text.tsx": [
+      "./components/_foundations/typography/component/text.tsx": [
         "./components/_foundations/typography/utils/index.ts",
         "./components/theme.tsx",
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
@@ -4496,10 +4518,10 @@
         "./node_modules/@types/styled-components/ts3.7/index.d.ts"
       ],
       "./components/_foundations/typography/index.ts": [
-        "./components/_foundations/typography/components/anchor.tsx",
-        "./components/_foundations/typography/components/heading.tsx",
-        "./components/_foundations/typography/components/paragraph.tsx",
-        "./components/_foundations/typography/components/text.tsx",
+        "./components/_foundations/typography/component/anchor.tsx",
+        "./components/_foundations/typography/component/heading.tsx",
+        "./components/_foundations/typography/component/paragraph.tsx",
+        "./components/_foundations/typography/component/text.tsx",
         "./components/_foundations/typography/utils/index.ts"
       ],
       "./components/_foundations/typography/utils/index.ts": [
@@ -4566,8 +4588,8 @@
         "./components/breadcrumbs/component/breadcrumbs.tsx"
       ],
       "./components/index.tsx": [
-        "./components/_foundations/box/index.ts",
-        "./components/_foundations/typography/index.ts",
+        "./components/_foundations/index.ts",
+        "./components/_utils/index.ts",
         "./components/breadcrumbs/index.ts",
         "./components/tabs/index.ts"
       ],
@@ -5142,6 +5164,12 @@
         "./node_modules/@types/node/ts3.2/util.d.ts",
         "./node_modules/@types/node/util.d.ts"
       ],
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
       "./node_modules/@types/history/createbrowserhistory.d.ts": [
         "./node_modules/@types/history/domutils.d.ts",
         "./node_modules/@types/history/index.d.ts",
@@ -5217,6 +5245,12 @@
         "./node_modules/@types/node/util.d.ts"
       ],
       "./node_modules/@types/json-schema/index.d.ts": [
+        "./node_modules/@types/node/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/fs.d.ts",
+        "./node_modules/@types/node/ts3.2/util.d.ts",
+        "./node_modules/@types/node/util.d.ts"
+      ],
+      "./node_modules/@types/json5/index.d.ts": [
         "./node_modules/@types/node/fs.d.ts",
         "./node_modules/@types/node/ts3.2/fs.d.ts",
         "./node_modules/@types/node/ts3.2/util.d.ts",
@@ -6792,26 +6826,26 @@
     "semanticDiagnosticsPerFile": [
       "./@types/jest-styled-components/index.d.ts",
       "./@types/styled-system__should-forward-prop/index.d.ts",
-      "./components/_foundations/box/components/box.tsx",
-      "./components/_foundations/box/components/index.ts",
+      "./components/_foundations/box/component/box.tsx",
+      "./components/_foundations/box/component/index.ts",
       "./components/_foundations/box/index.ts",
       "./components/_foundations/color/index.stories.tsx",
-      "./components/_foundations/common/components/index.ts",
-      "./components/_foundations/common/components/stack/index.ts",
-      "./components/_foundations/common/components/stack/stack.tsx",
+      "./components/_foundations/common/component/index.ts",
+      "./components/_foundations/common/component/stack/index.ts",
+      "./components/_foundations/common/component/stack/stack.tsx",
       "./components/_foundations/common/index.ts",
       "./components/_foundations/index.ts",
-      "./components/_foundations/theme/components/globalstyles.ts",
-      "./components/_foundations/theme/components/provider.tsx",
+      "./components/_foundations/theme/component/globalstyles.ts",
+      "./components/_foundations/theme/component/provider.tsx",
       "./components/_foundations/theme/index.ts",
       "./components/_foundations/theme/styles/base.ts",
       "./components/_foundations/theme/styles/bcctabsstyle.ts",
       "./components/_foundations/theme/styles/normalize.ts",
       "./components/_foundations/theme/styles/spacing.ts",
-      "./components/_foundations/typography/components/anchor.tsx",
-      "./components/_foundations/typography/components/heading.tsx",
-      "./components/_foundations/typography/components/paragraph.tsx",
-      "./components/_foundations/typography/components/text.tsx",
+      "./components/_foundations/typography/component/anchor.tsx",
+      "./components/_foundations/typography/component/heading.tsx",
+      "./components/_foundations/typography/component/paragraph.tsx",
+      "./components/_foundations/typography/component/text.tsx",
       "./components/_foundations/typography/index.stories.tsx",
       "./components/_foundations/typography/index.ts",
       "./components/_foundations/typography/utils/index.ts",
@@ -6909,6 +6943,7 @@
       "./node_modules/@storybook/router/dist/utils.d.ts",
       "./node_modules/@types/anymatch/index.d.ts",
       "./node_modules/@types/color-name/index.d.ts",
+      "./node_modules/@types/eslint-visitor-keys/index.d.ts",
       "./node_modules/@types/history/createbrowserhistory.d.ts",
       "./node_modules/@types/history/createhashhistory.d.ts",
       "./node_modules/@types/history/creatememoryhistory.d.ts",
@@ -6920,6 +6955,7 @@
       "./node_modules/@types/html-minifier-terser/index.d.ts",
       "./node_modules/@types/is-function/index.d.ts",
       "./node_modules/@types/json-schema/index.d.ts",
+      "./node_modules/@types/json5/index.d.ts",
       "./node_modules/@types/node/async_hooks.d.ts",
       "./node_modules/@types/node/base.d.ts",
       "./node_modules/@types/node/buffer.d.ts",
