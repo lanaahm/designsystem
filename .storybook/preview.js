@@ -1,6 +1,13 @@
-import { addDecorator, addParameters } from '@storybook/react';
-import { withA11y } from '@storybook/addon-a11y';
-import { jsxDecorator } from 'storybook-addon-jsx';
+import {
+  addDecorator,
+  addParameters
+} from '@storybook/react';
+import {
+  withA11y
+} from '@storybook/addon-a11y';
+import {
+  jsxDecorator
+} from 'storybook-addon-jsx';
 import storybookTheme from './storybookTheme';
 
 // Accessibility addon
@@ -15,7 +22,7 @@ addDecorator(jsxDecorator);
 addParameters({
   jsx: {
     showDefaultProps: false,
-  },
+  }
 });
 
 // use custom theme

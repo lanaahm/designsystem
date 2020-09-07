@@ -11,7 +11,9 @@ export default {
   parameters: {
     notes: { markdown: false },
     jsx: { disable: true },
+    sidebar: { disable: true },
   },
+  skip: true,
 };
 
 export const Example = () => (
@@ -29,14 +31,7 @@ export const Example = () => (
               boxShadow="0px 5px 20px rgba(128, 128, 128, 0.1)"
               color={colors.white}
             >
-              <Box
-                display="flex"
-                flex="1"
-                flexDirection="column"
-                width="100%"
-                p="20px"
-                background={colors.biru}
-              >
+              <Box display="flex" flex="1" flexDirection="column" width="100%" p="20px" background={colors.biru}>
                 <Heading color={colors.white} scale="heading5">
                   Biru
                 </Heading>
@@ -98,13 +93,7 @@ export const Example = () => (
           </Box>
         </Box>
         <Box mb={24}>
-          <Box
-            backgroundColor={colors.merah}
-            display="inline-block"
-            verticalAlign="top"
-            width="120px"
-            height="120px"
-          />
+          <Box backgroundColor={colors.merah} display="inline-block" verticalAlign="top" width="120px" height="120px" />
           <Box ml={12} display="inline-block" verticalAlign="top">
             <Heading color={colors.black} scale="heading5">
               Merah
@@ -114,13 +103,7 @@ export const Example = () => (
           </Box>
         </Box>
         <Box mb={24}>
-          <Box
-            backgroundColor={colors.hijau}
-            display="inline-block"
-            verticalAlign="top"
-            width="120px"
-            height="120px"
-          />
+          <Box backgroundColor={colors.hijau} display="inline-block" verticalAlign="top" width="120px" height="120px" />
           <Box ml={12} display="inline-block" verticalAlign="top">
             <Heading color={colors.black} scale="heading5">
               Hijau
@@ -131,14 +114,7 @@ export const Example = () => (
         </Box>
       </ComponentBlock>
       <ComponentBlock title="Saturation dan Shade" scaleTitle="heading5" withBackground>
-        <Box
-          display="grid"
-          width="75%"
-          gridGap="5%"
-          gridTemplateColumns="repeat(3,1fr)"
-          mb="calc(3px + 5%)"
-          mx="auto"
-        >
+        <Box display="grid" width="75%" gridGap="5%" gridTemplateColumns="repeat(3,1fr)" mb="calc(3px + 5%)" mx="auto">
           <Box display="flex" flexDirection="column" width="100%" height="50%">
             <Heading color={colors.black} scale="heading5" my={15}>
               Biru

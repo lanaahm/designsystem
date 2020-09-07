@@ -14,6 +14,7 @@ const SecondaryColors = {
   merah: '#E74C3C',
   hijau: '#2ECC71',
 };
+
 const SaturationShadeColors = {
   // Biru
   biru01: '#2874A6',
@@ -173,5 +174,21 @@ export const elevation = {
   },
   level5: {
     boxShadow: `0px 24px 48px ${shadowColor};`,
+  },
+};
+
+export const table = {
+  border: {
+    border: '1px',
+    borderStyle: 'solid',
+    borderColor: 'rgba(20, 48, 69, 0.08)',
+  },
+  typeTable: {
+    roundedTop: '10px 10px 0px 0px',
+    sharp: '0',
+  },
+  row: {
+    striped: '#F9FDFF',
+    selected: '#F1FAFE',
   },
 };

@@ -9,6 +9,7 @@ import {
   mediaQueries,
   shadows,
   radiuss,
+  table,
   componentStyles,
 } from './_utils';
 
@@ -20,6 +21,7 @@ export const themeProps = {
   fonts,
   shadows,
   radiuss,
+  table,
   breakpoints,
   mediaQueries,
 
@@ -35,6 +37,7 @@ export const Theme: React.FC = ({ children }) => {
 export type Color = keyof typeof themeProps['colors'];
 export type Space = keyof typeof themeProps['space'];
 export type Elevation = keyof typeof themeProps['elevation'];
+export type Table = keyof typeof themeProps['table'];
 export type CardElevation = keyof typeof componentStyles.boxShadow;
 export type SubtitlehScale = keyof typeof componentStyles.subtitle;
 export type TextScale = keyof typeof componentStyles.text;

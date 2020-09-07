@@ -1,10 +1,9 @@
 import * as React from 'react';
 import styled from 'styled-components';
 import toArray from 'rc-util/lib/Children/toArray';
-import PropTypes from 'prop-types';
 
 export interface BreadcrumbsProps {
-  separator?: string;
+  separator?: '/' | '|' | '>';
   className?: string;
   style?: React.CSSProperties;
 }
@@ -34,10 +33,6 @@ const Breadcrumbs: React.FC<BreadcrumbsProps> = ({ separator = '/', children, ..
       <Ol {...rest}> {crumbs} </Ol>
     </Nav>
   );
-};
-
-Breadcrumbs.propTypes = {
-  separator: PropTypes.oneOf(['/', '|', '>']).isRequired,
 };
 
 Breadcrumbs.displayName = 'Breadcrumbs';

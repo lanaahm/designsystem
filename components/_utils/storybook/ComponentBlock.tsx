@@ -16,15 +16,27 @@ const ComponentBlock: React.FC<ComponentBlockProps> = ({
   pd,
   scaleTitle,
   ...rest
-}) => (
-  <Stack spacing="md" {...rest}>
-    <Heading color="hitam02" scale={scaleTitle}>
-      {title}
-    </Heading>
-    <Box backgroundColor={withBackground ? 'white' : undefined} padding={pd || undefined}>
-      {children}
-    </Box>
-  </Stack>
-);
+}) => {
+  if (title) {
+    return (
+      <Stack spacing="md" {...rest}>
+        <Heading color="hitam02" scale={scaleTitle}>
+          {title}
+        </Heading>
+        <Box backgroundColor={withBackground ? 'white' : undefined} padding={pd || undefined}>
+          {children}
+        </Box>
+      </Stack>
+    );
+  } else {
+    return (
+      <Stack spacing="md" {...rest}>
+        <Box backgroundColor={withBackground ? 'white' : undefined} padding={pd || undefined}>
+          {children}
+        </Box>
+      </Stack>
+    );
+  }
+};
 
 export default ComponentBlock;

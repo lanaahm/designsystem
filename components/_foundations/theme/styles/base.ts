@@ -4,16 +4,19 @@ import BCCTabsStyle from './BCCTabsStyle';
 
 const skeleton = `
 .skeleton {
-	min-height: 15px;
-	border-radius: 4px;
+  min-height: 15px;
+  border-radius: 4px;
   font-size: 0px;
-  line-height: 1em;
-	background-color: #e2e5e7;
-	background-image: linear-gradient(90deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-	background-size: 40px 100%;
-	background-repeat: no-repeat;
-	background-position: left -40px top 0;
+  /* line-height: 1em; */
+  background-color: #e2e5e7;
+  background-image: linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,0.5),rgba(255,255,255,0));
+  background-size: 40px 100%;
+  background-repeat: no-repeat;
+  background-position: left -40px top 0;
   animation: shine 1s ease infinite;
+  white-space: nowrap;
+  /* overflow: hidden; */
+  text-overflow: ellipsis;
     &.w15 {
       max-width: 15%;
     } 
