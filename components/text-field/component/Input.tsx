@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import PropTypes from "prop-types";
 import { colors } from "../../_utils";
+import Success from "@material-ui/icons/Check";
 
 export interface InputProps {
   disabled?: boolean;
@@ -13,12 +14,16 @@ export interface InputProps {
   action?: string;
   handleChange?: Function;
   hintText?: string;
+  success?: boolean;
+  className?: string;
+  icon?: React.ReactElement;
   style?: React.CSSProperties;
 }
 
 const ContainerInput = styled("div")`
   display: inline-flex;
   flex-direction: column;
+  position: relative;
 `;
 
 const InputField = styled("input")`
@@ -98,18 +103,33 @@ const Input: React.FC<InputProps> = ({
   handleChange,
   action,
   type,
+  success,
+  className,
+  icon,
   ...rest
 }) => {
   return (
     <ContainerInput>
-      <InputField
-        placeholder={placeholder}
-        disabled={disabled}
-        action={action}
-        value={value}
-        onChange={handleChange}
-        type={type}
-      />
+      <div>
+        {success ? (
+          <Success
+            style={{ color: "#2DCC70", position: "absolute", right: "16px", top : "12px" }}
+          />
+        ) : null}
+        <span style={{ color: "#D8D8D8", position: "absolute", left: "16px", top : "12px" }}>
+          {icon}
+        </span>
+        <InputField
+          placeholder={placeholder}
+          disabled={disabled}
+          action={action}
+          value={value}
+          onChange={handleChange}
+          type={type}
+          className={className}
+          style= {icon && {paddingLeft : '48px'} || success && {paddingRight : '48px'}}
+        ></InputField>
+      </div>
       {hintText.length > 0 ? (
         <HintText action={action}>{hintText}</HintText>
       ) : null}

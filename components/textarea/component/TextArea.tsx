@@ -9,9 +9,10 @@ export interface TextAreaProps {
   disabled?: boolean;
   placeholder?: string;
   value?: string;
-  isWarning?: false;
+  isWarning?: boolean;
   hintText?: string;
   handleChange?: Function;
+  className ?: string;
   style?: React.CSSProperties;
 }
 
@@ -34,6 +35,17 @@ height: 120px;
 
 &::placeholder {
   color: rgba(20, 48, 69, 0.5);
+}
+
+&::-webkit-scrollbar {
+  width: 14px;
+}
+
+&::-webkit-scrollbar-thumb {
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box;
+  border-radius: 7px;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 &:active,
@@ -67,6 +79,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   isWarning,
   handleChange,
   value,
+  className,
   ...rest
 }) => {
   return (
@@ -89,6 +102,7 @@ const TextArea: React.FC<TextAreaProps> = ({
           onChange={handleChange}
           disabled={disabled}
           isWarning={isWarning}
+          className = {className}
         />
       </InputContainer>
       {hintText.length > 0 ? <HintText>{hintText}</HintText> : null}
