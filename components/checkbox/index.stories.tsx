@@ -24,9 +24,28 @@ export const Example = () => {
           <Checkbox
             checked={isChecked}
             handleChange={() => setIsChecked(!isChecked)}
+            label="Hello World"
           />
         </label>
       </Stack>
     </SystemBlock>
   );
 };
+
+export const Skeleton = () => {
+  const [isChecked, setIsChecked] = useState(false);
+  return (
+    <SystemBlock title="BCC Design System - Checkbox">
+      <Stack spacing="xl">
+        <label>
+          <Checkbox
+            checked={isChecked}
+            handleChange={() => setIsChecked(!isChecked)}
+            label="Hello World"
+          />
+        </label>
+      </Stack>
+    </SystemBlock>
+  );
+};
+

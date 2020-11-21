@@ -7,6 +7,7 @@ import {
   ComponentBlock,
 } from "../_utils/storybook";
 import Password from "./component/Password";
+import PasswordSkeleton from "./component/PasswordSkeleton";
 
 export default {
   title: "Component|Password",
@@ -26,6 +27,16 @@ export const Default = () => {
           handleChange={(e) => setPassord(e.target.value)}
           handleShow={() => setIsShow(!isShow)}
         />
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const Skeleton = () => {
+  return (
+    <SystemBlock title="BCC Design System - Password Field">
+      <Stack spacing="xl">
+        <PasswordSkeleton />
       </Stack>
     </SystemBlock>
   );

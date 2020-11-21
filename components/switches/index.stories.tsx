@@ -7,6 +7,7 @@ import {
   ComponentBlock,
 } from "../_utils/storybook";
 import Switcher from "./component/Switcher";
+import SwitcherSkeleton from "./component/SwitcherSkeleton";
 import { useState } from "react";
 
 export default {
@@ -21,6 +22,16 @@ export const Default = () => {
     <SystemBlock title="BCC Design System - Switcher">
       <Stack spacing="xl">
         <Switcher checked={isSwitch} onSlide={() => setIsSwitch(!isSwitch)} />
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const Skeleton = () => {
+  return (
+    <SystemBlock title="BCC Design System - Switcher">
+      <Stack spacing="xl">
+        <SwitcherSkeleton />
       </Stack>
     </SystemBlock>
   );

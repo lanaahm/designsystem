@@ -7,6 +7,7 @@ import {
   ComponentBlock,
 } from "../_utils/storybook";
 import RadioButton from "./component/RadioButton";
+import RadioSkeleton from "./component/RadioSkeleton";
 import RadioGroup from "./component/RadioGroup";
 import { useState } from "react";
 
@@ -50,6 +51,47 @@ export const Default = () => {
             handleChange={handleRadio}
           >
             System
+          </RadioButton>
+        </RadioGroup>
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const Skeleton = () => {
+  const [option, setOption] = useState("BCC");
+
+  const handleRadio = (e) => {
+    setOption(e.target.value);
+  };
+
+  return (
+    <SystemBlock title="BCC Design System - Radio">
+      <Stack spacing="xl">
+        <RadioGroup>
+          <RadioButton
+            id="option1"
+            value="BCC"
+            checked={option == "BCC"}
+            handleChange={handleRadio}
+          >
+            <RadioSkeleton />
+          </RadioButton>
+          <RadioButton
+            id="option2"
+            value="Design"
+            checked={option == "Design"}
+            handleChange={handleRadio}
+          >
+            <RadioSkeleton />
+          </RadioButton>
+          <RadioButton
+            value="System"
+            id="option3"
+            checked={option == "System"}
+            handleChange={handleRadio}
+          >
+            <RadioSkeleton />
           </RadioButton>
         </RadioGroup>
       </Stack>
