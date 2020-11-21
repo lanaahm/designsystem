@@ -49,36 +49,38 @@ const Table: React.FC<TableProps> = ({
   const { getPrefixCls } = React.useContext(ConfigContext);
   const prefixWrapperCls = getPrefixCls('react-bootstrap-table', customizePrefixCls);
   const prefixCls = getPrefixCls('table', customizePrefixCls);
+  const dataSkelaton = productsGenerator(5);
+  const columnsSkelaton:any[] = [];
 
   if (skelaton) {
-    const products = productsGenerator(5);
-    data = products;
-    columns.map(obj => {
+    columns.forEach(val => columnsSkelaton.push(Object.assign({}, val)));
+    columnsSkelaton.map((columnsSkelaton) => {
       // @ts-ignore
-      (obj.formatter = (_) => {
+      (columnsSkelaton.formatter = (_) => {
           return (
-            <p className="skeleton" style={{width: "70%"}}>Skelaton</p>
+          <p className="skeleton" style={{width: "70%"}}>{"Skelaton"}</p>
           );
         }
       ),
       // @ts-ignore
-      (obj.headerClasses = "skeleton")
+      (columnsSkelaton.headerClasses = "skeleton")
     });
   }
-
+  
   if (sorted) {
     columns.map(obj => {
       if (obj.sort === undefined || null) {
         (obj.sort = true),
-          // @ts-ignore
-          (obj.sortCaret = (order: string, _column: any) => {
-            if (!order) return <ExpandAltOutlined rotate={135} className="bcc-table-iconSort" />;
-            else if (order === 'asc') return <UpOutlined className="bcc-table-iconSort" />;
-            else if (order === 'desc') return <DownOutlined className="bcc-table-iconSort" />;
-          });
+        // @ts-ignore
+        (obj.sortCaret = (order: string, _column: any) => {
+          if (!order) return <ExpandAltOutlined rotate={135} className="bcc-table-iconSort" />;
+          else if (order === 'asc') return <UpOutlined className="bcc-table-iconSort" />;
+          else if (order === 'desc') return <DownOutlined className="bcc-table-iconSort" />;
+        });
       }
-    });
+    })
   }
+  
 
   if (selection) {
     selection = [];
@@ -259,8 +261,8 @@ const Table: React.FC<TableProps> = ({
         wrapperClasses={classNames({
           [`${prefixWrapperCls}-${shape.replace(/\s/g, '')}`]: shape,
         })}
-        data={data}
-        columns={columns}
+        data={skelaton ? dataSkelaton :data}
+        columns={skelaton ? columnsSkelaton :columns}
         {...props}
       />
     </React.Fragment>
