@@ -1,6 +1,7 @@
 import * as React from 'react';
 import classNames from 'classnames';
 import { ConfigContext } from '../../config-provider';
+import { productsGenerator } from '../../_utils/common';
 
 import BootstrapTable, { BootstrapTableProps } from 'react-bootstrap-table-next';
 import paginationFactory, {
@@ -48,10 +49,18 @@ const Table: React.FC<TableProps> = ({
   const { getPrefixCls } = React.useContext(ConfigContext);
   const prefixWrapperCls = getPrefixCls('react-bootstrap-table', customizePrefixCls);
   const prefixCls = getPrefixCls('table', customizePrefixCls);
+
   if (skelaton) {
+    const products = productsGenerator(5);
+    data = products;
     columns.map(obj => {
       // @ts-ignore
-      (obj.classes = "skeleton"),
+      (obj.formatter = (_) => {
+          return (
+            <p className="skeleton" style={{width: "70%"}}>Skelaton</p>
+          );
+        }
+      ),
       // @ts-ignore
       (obj.headerClasses = "skeleton")
     });
