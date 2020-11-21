@@ -103,3 +103,13 @@ export const Pagination = () => (
     </Stack>
   </SystemBlock>
 );
+
+export const Skelaton = () => (
+  <SystemBlock title="BCC Design System - Table">
+    <Stack spacing="xl">
+      <ComponentBlock title="" withBackground pd="0">
+        <Table keyField="id" data={products} columns={columns1} shape="Rounded Top" skelaton={true} />
+      </ComponentBlock>
+    </Stack>
+  </SystemBlock>
+);

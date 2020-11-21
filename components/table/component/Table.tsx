@@ -23,6 +23,7 @@ export interface TableProps extends Pick<BootstrapTableProps, 'classes' | 'colum
   condensed?: boolean;
   relaxed?: boolean;
   sorted?: boolean;
+  skelaton?: boolean;
   selection?: boolean | any;
   pagin?: number[];
 }
@@ -38,6 +39,7 @@ const Table: React.FC<TableProps> = ({
   condensed,
   relaxed,
   sorted = false,
+  skelaton = false,
   selection = false,
   pagin,
   ...props
@@ -46,6 +48,15 @@ const Table: React.FC<TableProps> = ({
   const { getPrefixCls } = React.useContext(ConfigContext);
   const prefixWrapperCls = getPrefixCls('react-bootstrap-table', customizePrefixCls);
   const prefixCls = getPrefixCls('table', customizePrefixCls);
+  if (skelaton) {
+    columns.map(obj => {
+      // @ts-ignore
+      (obj.classes = "skeleton"),
+      // @ts-ignore
+      (obj.headerClasses = "skeleton")
+    });
+  }
+
   if (sorted) {
     columns.map(obj => {
       if (obj.sort === undefined || null) {
