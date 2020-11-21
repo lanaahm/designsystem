@@ -98,6 +98,8 @@ const Shadow = styled("div")`
 `;
 
 const Label = styled("label")`
+  display: flex;
+  align-items: center;
   cursor: pointer;
   font-size: 1rem;
   vertical-align: middle;

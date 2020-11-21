@@ -12,6 +12,10 @@
   user-select: none;
 }
 
+.option {
+  width: 150px;
+}
+
 /* Hide the browser's default checkbox */
 .container-checkbox input {
   position: absolute;

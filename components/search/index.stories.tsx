@@ -7,6 +7,7 @@ import {
   ComponentBlock,
 } from "../_utils/storybook";
 import Search from "./component/Search";
+import SearchSkeleton from "./component/SearchSkeleton";
 
 export default {
   title: "Component|Search",
@@ -23,6 +24,16 @@ export const Default = () => {
           value={search}
           handleChange={(e) => setSearch(e.target.value)}
         />
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const Skeleton = () => {
+  return (
+    <SystemBlock title="BCC Design System - Search">
+      <Stack spacing="xl">
+        <SearchSkeleton />
       </Stack>
     </SystemBlock>
   );

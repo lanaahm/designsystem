@@ -91,7 +91,7 @@ const TextArea: React.FC<TextAreaProps> = ({
           isWarning={isWarning}
         />
       </InputContainer>
-      {hintText.length > 0 ? <HintText>{hintText}</HintText> : null}
+      {hintText.length > 0 ? <HintText >{hintText}</HintText> : null}
     </>
   );
 };
