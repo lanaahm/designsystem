@@ -28,12 +28,43 @@ export const Default = () => {
           {isClosed ? "Open" : "Close"}
         </Button>
         <Menu opened={isClosed}>
-          <Menu.Item onClick={(e) => setIsClosed(!isClosed)}>Profile</Menu.Item>
-          <Menu.Item onClick={(e) => setIsClosed(!isClosed)}>
-            My account
+          <Menu.Item name="Profile" onClick={(e) => setIsClosed(!isClosed)} />
+          <Menu.Item
+            name="My account"
+            onClick={(e) => setIsClosed(!isClosed)}
+          />
+          <Menu.Item name="Settings" onClick={(e) => setIsClosed(!isClosed)}  />
+          <Menu.Item name="Logout" onClick={(e) => setIsClosed(!isClosed) }hasDivider />
+        </Menu>
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const withSubItem = () => {
+  const [isClosed, setIsClosed] = useState(true);
+  return (
+    <SystemBlock title="BCC Design System - Menu">
+      <Stack spacing="xl">
+        <Button onClick={(e) => setIsClosed(!isClosed)} variant="contained">
+          {isClosed ? "Open" : "Close"}
+        </Button>
+        <Menu opened={isClosed}>
+          <Menu.Item name="Profile" onClick={(e) => setIsClosed(!isClosed)} />
+          <Menu.Item name="My account" onClick={(e) => setIsClosed(!isClosed)}>
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>Stories</Menu.SubItem>
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>Wallet</Menu.SubItem>
           </Menu.Item>
-          <Menu.Item onClick={(e) => setIsClosed(!isClosed)}>Settings</Menu.Item>
-          <Menu.Item onClick={(e) => setIsClosed(!isClosed)}>Logout</Menu.Item>
+          <Menu.Item name="Settings">
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>History</Menu.SubItem>
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>Privacy</Menu.SubItem>
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>Login Activity</Menu.SubItem>
+            <Menu.SubItem onClick={(e) => setIsClosed(!isClosed)}>Push Notification</Menu.SubItem>
+          </Menu.Item>
+          <Menu.Item
+            name="Logout"
+            onClick={(e) => setIsClosed(!isClosed)}
+          ></Menu.Item>
         </Menu>
       </Stack>
     </SystemBlock>
@@ -49,10 +80,10 @@ export const Disabled = () => {
           {isClosed ? "Open" : "Close"}
         </Button>
         <Menu opened={isClosed}>
-          <Menu.Item disabled>Profile</Menu.Item>
-          <Menu.Item disabled>My account</Menu.Item>
-          <Menu.Item>Settings</Menu.Item>
-          <Menu.Item>Logout</Menu.Item>
+          <Menu.Item name="Profile" disabled></Menu.Item>
+          <Menu.Item name="My account" disabled></Menu.Item>
+          <Menu.Item name="Settings"></Menu.Item>
+          <Menu.Item name="Logout"></Menu.Item>
         </Menu>
       </Stack>
     </SystemBlock>
@@ -68,10 +99,10 @@ export const withIcon = () => {
           {isClosed ? "Open" : "Close"}
         </Button>
         <Menu opened={isClosed}>
-          <Menu.Item logo={<Lock />}>Profile</Menu.Item>
-          <Menu.Item logo={<User />}>My account</Menu.Item>
-          <Menu.Item logo={<Settings />}>Settings</Menu.Item>
-          <Menu.Item logo={<Exit />}>Logout</Menu.Item>
+          <Menu.Item logo={<Lock />} name="Profile"></Menu.Item>
+          <Menu.Item logo={<User />} name="My account"></Menu.Item>
+          <Menu.Item logo={<Settings />} name="Settings"></Menu.Item>
+          <Menu.Item logo={<Exit />} name="Logout"></Menu.Item>
         </Menu>
       </Stack>
     </SystemBlock>
