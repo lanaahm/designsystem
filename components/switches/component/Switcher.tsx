@@ -61,7 +61,7 @@ const Input = styled("input")`
   }
   &:checked + * {
     &:before {
-      transform: translateX(20px);
+      transform: translateX(21px);
     }
   }
 

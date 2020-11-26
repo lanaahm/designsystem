@@ -22,7 +22,6 @@ const RadioContainer = styled("div")`
 
 const Radio = styled("input")`
   display: none;
-
   &:checked + label > span {
     border-color: ${themeGet("colors.biru", colors.biru03)};
     &::before {
@@ -32,7 +31,6 @@ const Radio = styled("input")`
   &:hover + label > div {
     border: 3px solid red;
   }
-
   &:disabled {
     &:checked + label > span {
       border: 1.5px solid #d8d8d8;
@@ -45,7 +43,6 @@ const Radio = styled("input")`
   &:disabled + label span {
     cursor: not-allowed;
   }
-
   &:disabled + label > span {
     border: 1.5px solid #d8d8d8;
   }
@@ -62,9 +59,7 @@ const Circle = styled("span")`
   height: 20px;
   cursor: pointer;
   border-radius: 50%;
-  position: relative;
   border: 1.5px solid #888;
-
   &::before {
     content: "";
     opacity: 0;

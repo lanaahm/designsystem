@@ -18,6 +18,7 @@ export interface InputProps {
   className?: string;
   icon?: React.ReactElement;
   style?: React.CSSProperties;
+  skeleton?: boolean;
 }
 
 const ContainerInput = styled("div")`
@@ -36,6 +37,7 @@ const InputField = styled("input")`
   background-color: white;
   outline: none;
   min-width: 280px;
+
 
   &::placeholder {
     color: rgba(20, 48, 69, 0.5);
@@ -106,6 +108,7 @@ const Input: React.FC<InputProps> = ({
   success,
   className,
   icon,
+  skeleton,
   ...rest
 }) => {
   return (
@@ -126,12 +129,12 @@ const Input: React.FC<InputProps> = ({
           value={value}
           onChange={handleChange}
           type={type}
-          className={className}
+          className={skeleton && "skeleton"}
           style= {icon && {paddingLeft : '48px'} || success && {paddingRight : '48px'}}
         ></InputField>
       </div>
       {hintText.length > 0 ? (
-        <HintText action={action}>{hintText}</HintText>
+        <HintText className={skeleton && "skeleton"} style={skeleton&&{width:'30%'}} action={action}>{hintText}</HintText>
       ) : null}
     </ContainerInput>
   );

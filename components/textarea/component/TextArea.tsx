@@ -14,6 +14,7 @@ export interface TextAreaProps {
   handleChange?: Function;
   className ?: string;
   style?: React.CSSProperties;
+  skeleton?:boolean;
 }
 
 const InputContainer = styled("div")`
@@ -32,6 +33,7 @@ background-color: white;
 outline: none;
 min-width: 440px;
 height: 120px;
+animation: none!important;
 
 &::placeholder {
   color: rgba(20, 48, 69, 0.5);
@@ -80,6 +82,7 @@ const TextArea: React.FC<TextAreaProps> = ({
   handleChange,
   value,
   className,
+  skeleton,
   ...rest
 }) => {
   return (

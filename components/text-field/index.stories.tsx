@@ -143,7 +143,7 @@ export const Skeleton = () => {
           hintText="Loading ..."
           placeholder="Filled Text"
           value={value}
-          className="skeleton"
+          skeleton
           handleChange={(e) => setValue(e.target.value)}
         />
       </Stack>
