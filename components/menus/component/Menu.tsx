@@ -2,6 +2,7 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import { colors } from "../../_utils";
+import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 
 export interface MenuProps {
   opened?: boolean;
@@ -100,6 +101,12 @@ const MenuItemList = styled("li")`
   ${({ disabled }) =>
     disabled && "color:rgba(20, 48, 69, 0.26);cursor:default;"}
 `;
+
+const MenuItemListInner = styled("div")`
+  display: flex;
+  align-items: center;
+`;
+
 const MenuSubItemUl = styled("ul")`
   position: absolute;
   display: none;
@@ -150,12 +157,12 @@ const LogoList = styled("span")`
 `;
 
 const MenuDivider = styled("hr")`
-  margin:0;
-  padding:0;
-  border-top:1px solid rgb(0, 0, 0, 0.2);
-  border-left:0px solid rgb(0, 0, 0, 0.5);
-  border-right:0px solid rgb(0, 0, 0, 0.5);
-  border-bottom:0px solid rgb(0, 0, 0, 0.5);
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgb(0, 0, 0, 0.2);
+  border-left: 0px solid rgb(0, 0, 0, 0.5);
+  border-right: 0px solid rgb(0, 0, 0, 0.5);
+  border-bottom: 0px solid rgb(0, 0, 0, 0.5);
 `;
 
 const Menu: React.FC<MenuProps> & {
@@ -186,7 +193,16 @@ const MenuItem: React.FC<MenuItemProps> = ({
       {hasDivider ? <MenuDivider /> : ""}
       <MenuItemList disabled={disabled} onClick={onClick} style={style}>
         {logo ? <LogoList>{logo}</LogoList> : ""}
-        <span>{name}</span>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+          }}
+        >
+          <span>{name}</span>
+          <div>{children ? <ArrowRightIcon fontSize="inherit" /> : ""}</div>
+        </div>
         <MenuSubItemUl>{children}</MenuSubItemUl>
       </MenuItemList>
     </>
@@ -201,7 +217,11 @@ const MenuSubItem: React.FC<MenuSubItemProps> = ({
   style,
   ...rest
 }) => {
-  return <MenuSubItemList disabled={disabled} onClick={onClick} style={style}>{children}</MenuSubItemList>;
+  return (
+    <MenuSubItemList disabled={disabled} onClick={onClick} style={style}>
+      {children}
+    </MenuSubItemList>
+  );
 };
 
 Menu.Item = MenuItem;
