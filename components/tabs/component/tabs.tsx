@@ -1,6 +1,9 @@
 import * as React from "react";
 import RcTabs, { TabPane, TabsProps as RcTabsProps } from "rc-tabs";
 import classNames from "classnames";
+import { prefix } from "@fortawesome/free-solid-svg-icons";
+
+// NAMBAHIN WAVE ANIMATION
 
 export interface ConfigConsumerProps {
   getTargetContainer?: () => HTMLElement;
@@ -17,13 +20,13 @@ const ConfigContext = React.createContext<ConfigConsumerProps>({
 
 export type TabsType = "line" | "card" | "editable-card";
 export type TabsPosition = "top" | "right" | "bottom" | "left";
-export type TabsStyle = "Primary" | "Ligth" | "Darkk";
+export type TabsStyle = "Primary" | "Light" | "Dark";
 
 export interface TabsProps extends Omit<RcTabsProps, "editable"> {
   type?: TabsType;
   centered?: boolean;
   addIcon?: React.ReactNode;
-  tabStyle?: TabsStyle;
+  tabStyle?: TabsStyle | string;
 }
 
 function Tabs({
@@ -51,6 +54,7 @@ function Tabs({
           [`${prefixCls}-editable-card`]: type === "editable-card",
           [`${prefixCls}-centered`]: centered,
           [`${prefixCls}-style-${tabStyle}`]: tabStyle,
+          // [`${prefixCls}-`]:true,
         })}
         prefixCls={prefixCls}
       />
