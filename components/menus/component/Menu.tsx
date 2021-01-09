@@ -2,7 +2,9 @@ import * as React from "react";
 import styled, { keyframes } from "styled-components";
 import { themeGet } from "@styled-system/theme-get";
 import { colors } from "../../_utils";
-import ArrowRightIcon from "@material-ui/icons/ArrowRight";
+import ChevronRightIcon from "@material-ui/icons/ChevronRight";
+// KURANG MILIH BISA SELECTED ATAU HOVER
+// SUBMENU JIKA DI
 
 export interface MenuProps {
   opened?: boolean;
@@ -86,11 +88,18 @@ const MenuItemList = styled("li")`
   position: relative;
   flex-direction: row;
   align-items: center;
-  vertical-align: middle;
+  justify-content: start;
   height: 100%;
 
   &:hover {
-    background-color: rgba(196, 196, 196, 0.26);
+    background-color: #b9e4fb;
+    cursor: pointer;
+
+    ${({ disabled }) => disabled && "cursor:default;background:transparent"}
+  }
+
+  &:active {
+    background-color: #3598db;
     cursor: pointer;
 
     ${({ disabled }) => disabled && "cursor:default;background:transparent"}
@@ -118,17 +127,15 @@ const MenuSubItemUl = styled("ul")`
   box-shadow: inset -1px -1px 0px rgba(20, 48, 69, 0.16);
   border-radius: 2px;
   & li:first-child {
-    padding-top: 16px;
+    
   }
   & li:last-child {
-    padding-bottom: 16px;
+    
   }
+
   & li {
     user-select: none;
-    padding-right: 16px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-left: 16px;
+    height:56px;
   }
 `;
 const MenuSubItemList = styled("li")`
@@ -140,7 +147,7 @@ const MenuSubItemList = styled("li")`
   height: 100%;
 
   &:hover {
-    background-color: rgba(196, 196, 196, 0.26);
+    background-color: #b9e4fb;
     cursor: pointer;
 
     ${({ disabled }) => disabled && "cursor:default;background:transparent"}
@@ -192,16 +199,72 @@ const MenuItem: React.FC<MenuItemProps> = ({
     <>
       {hasDivider ? <MenuDivider /> : ""}
       <MenuItemList disabled={disabled} onClick={onClick} style={style}>
-        {logo ? <LogoList>{logo}</LogoList> : ""}
-        <div
+        <div>
+          {logo && children ? (
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: children ? "space-between" : "start",
+                alignItems: "center",
+              }}
+            >
+              {" "}
+              <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+                <LogoList>{logo}</LogoList>
+                <span>{name}</span>
+              </div>
+              <div>
+                <ChevronRightIcon fontSize="inherit" />{" "}
+              </div>
+            </div>
+          ) : logo?
+          <div
           style={{
             display: "flex",
-            justifyContent: "space-between",
+            flexDirection: "row",
+            justifyContent: children ? "space-between" : "start",
             alignItems: "center",
           }}
         >
+          {" "}
+          <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+            <LogoList>{logo}</LogoList>
+            <span>{name}</span>
+          </div>
+        </div>:children?
+         <div
+         style={{
+           display: "flex",
+           flexDirection: "row",
+           justifyContent: children ? "space-between" : "start",
+           alignItems: "center",
+         }}
+       >
+         {" "}
+         <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+           <span>{name}</span>
+         </div>
+         <div>
+           <ChevronRightIcon fontSize="inherit" />{" "}
+         </div>
+       </div>:
+        <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          justifyContent: children ? "space-between" : "start",
+          alignItems: "center",
+        }}
+      >
+        {" "}
+        <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
           <span>{name}</span>
-          <div>{children ? <ArrowRightIcon fontSize="inherit" /> : ""}</div>
+        </div>
+        <div>
+        </div>
+      </div>
+        }
         </div>
         <MenuSubItemUl>{children}</MenuSubItemUl>
       </MenuItemList>
