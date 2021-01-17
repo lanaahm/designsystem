@@ -1,8 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import PropTypes from "prop-types";
-import { colors } from "../../_utils";
 import Success from "@material-ui/icons/Check";
 
 export interface InputProps {
@@ -114,7 +111,7 @@ const Input: React.FC<InputProps> = ({
   return (
     <ContainerInput>
       <div>
-        {success ? (
+        {action ==='success' && value.length > 0? (
           <Success
             style={{ color: "#2DCC70", position: "absolute", right: "16px", top : "12px" }}
           />
@@ -125,7 +122,7 @@ const Input: React.FC<InputProps> = ({
         <InputField
           placeholder={placeholder}
           disabled={disabled}
-          action={action}
+          action={value.length > 0 ? action : "normal"}
           value={value}
           onChange={handleChange}
           type={type}
@@ -134,7 +131,7 @@ const Input: React.FC<InputProps> = ({
         ></InputField>
       </div>
       {hintText.length > 0 ? (
-        <HintText className={skeleton && "skeleton"} style={skeleton&&{width:'30%'}} action={action}>{hintText}</HintText>
+        <HintText className={skeleton && "skeleton"} style={skeleton&&{width:'30%'}} action={value.length > 0 ? action : "normal"}>{hintText}</HintText>
       ) : null}
     </ContainerInput>
   );

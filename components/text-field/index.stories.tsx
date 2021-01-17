@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Stack } from "../_foundations/common";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import { withKnobs } from "@storybook/addon-knobs";
 import PersonIcon from '@material-ui/icons/Person';
 
 import {
@@ -13,7 +13,6 @@ import { useState } from "react";
 
 export default {
   title: "Component|Input",
-  // component: [Tabs, TabPane],
   decorators: [SystemWrapper, withKnobs],
 };
 
@@ -112,7 +111,7 @@ export const Error = () => {
 export const Disabled = () => (
   <SystemBlock title="BCC Design System - Input">
     <Stack spacing="xl">
-      <Input disabled />
+      <Input disabled  value=""/>
     </Stack>
   </SystemBlock>
 );
@@ -126,7 +125,7 @@ export const Success = () => {
           hintText="Success Text"
           placeholder="Filled Text"
           value={value}
-          success={true}
+          action = 'success'
           handleChange={(e) => setValue(e.target.value)}
         />
       </Stack>
