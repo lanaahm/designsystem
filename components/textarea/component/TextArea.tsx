@@ -1,8 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import PropTypes from "prop-types";
-import { colors } from "../../_utils";
 import Warning from "@material-ui/icons/Warning";
 
 export interface TextAreaProps {
@@ -12,9 +9,9 @@ export interface TextAreaProps {
   isWarning?: boolean;
   hintText?: string;
   handleChange?: Function;
-  className ?: string;
+  className?: string;
   style?: React.CSSProperties;
-  skeleton?:boolean;
+  skeleton?: boolean;
 }
 
 const InputContainer = styled("div")`
@@ -104,11 +101,15 @@ const TextArea: React.FC<TextAreaProps> = ({
           value={value}
           onChange={handleChange}
           disabled={disabled}
-          isWarning={isWarning}
-          className = {className}
+          isWarning={value.length > 0 && isWarning}
+          className={className}
         />
       </InputContainer>
-      {hintText.length > 0 ? <HintText>{hintText}</HintText> : null}
+      {hintText.length > 0 ? (
+        <HintText isWarning={value.length > 0 && isWarning}>
+          {hintText}
+        </HintText>
+      ) : null}
     </>
   );
 };
