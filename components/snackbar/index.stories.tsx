@@ -127,7 +127,10 @@ export const WithIcon = () => {
 export const WithIconAndAction = () => {
   const [arr, setArr] = useState([]);
   const generate = () => {
-    setArr([...arr, <SnackBar text="Text" action="action" />]);
+    setArr([
+      ...arr,
+      <SnackBar text="Text" action="action" icon={<InfoIcon />} />,
+    ]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -199,18 +202,28 @@ export const WideLayoutWithAction = () => {
 
 export const Placement = () => {
   const [arr, setArr] = useState([]);
-  const generate = () => {
+  const generateLeft = () => {
     setArr([...arr, <SnackBar text="Placement left" placement="left" />]);
+  };
+  const generateRight = () => {
+    setArr([...arr, <SnackBar text="Placement right" placement="right" />]);
+  };
+  const generateCenter = () => {
+    setArr([...arr, <SnackBar text="Placement center" placement="center" />]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
       {" "}
-      <button onClick={generate}>Snack Bar</button>
+      <div>
+        <button onClick={generateLeft}>Snack Bar Left</button>
+        <button onClick={generateCenter}>Snack Bar Center</button>
+        <button onClick={generateRight}>Snack Bar Right</button>
+      </div>
       <Stack spacing="xl">
         <SnackBarWrapper>
-          <SnackBar text="Placement left" placement="left" />
+          {/* <SnackBar text="Placement left" placement="left" />
           <SnackBar text="Placement center" placement="center" />
-          <SnackBar text="Placement right" placement="right" />
+          <SnackBar text="Placement right" placement="right" /> */}
           {arr.map((e) => {
             return e;
           })}
@@ -225,7 +238,12 @@ export const Error = () => {
   const generate = () => {
     setArr([
       ...arr,
-      <SnackBar text="Error occured" error={true} action="action" />,
+      <SnackBar
+        text="Error occured"
+        error={true}
+        action="action"
+        icon={<InfoIcon />}
+      />,
     ]);
   };
   return (

@@ -5,7 +5,7 @@ import { colors, typeScale } from "../../_utils/variables";
 const fadeIn = keyframes`
   from{
     opacity : 0;
-    transform : translateY(-30%);
+    transform : translateY(5%);
   }
 
   to{
@@ -22,7 +22,7 @@ const fadeOut = keyframes`
 
   to{
     opacity : 0;
-    transform : translateY(5%);
+    transform : translateY(-30%);
   }
 `;
 
