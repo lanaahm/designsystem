@@ -5,7 +5,7 @@ import { colors, typeScale } from "../../_utils/variables";
 const fadeIn = keyframes`
   from{
     opacity : 0;
-    transform : translateY(5%);
+    transform : translateY(30%);
   }
 
   to{
@@ -32,7 +32,7 @@ export interface SnackBarProps {
   text?: string;
   error?: boolean;
   layout?: "mobile" | "desktop";
-  placement?: "left" | "center" | "right";
+  alignment?: "left" | "center" | "right";
   duration ?: number;
 }
 
@@ -52,7 +52,7 @@ const SnackBarContainer = styled("div")`
   position: relative;
   bottom : 30%;
   justify-content: ${(props) => {
-    switch (props.placement) {
+    switch (props.alignment) {
       case "left":
         return "flex-start";
       case "center":
@@ -102,7 +102,7 @@ const Snackbar: React.FC<SnackBarProps> = ({
   action,
   icon,
   error,
-  placement,
+  alignment,
   layout,
   duration
 }) => {
@@ -113,7 +113,7 @@ const Snackbar: React.FC<SnackBarProps> = ({
     }, duration);
   });
   return (
-    <SnackBarContainer placement={placement}>
+    <SnackBarContainer alignment={alignment}>
       <SnackBarInner error={error} layout={layout} animation = {animation}>
         {icon && <Icon>{icon}</Icon>}
         <Text>{text}</Text>
@@ -127,7 +127,7 @@ Snackbar.defaultProps = {
   icon: null,
   action: null,
   error: false,
-  placement: "left",
+  alignment: "left",
   layout: "mobile",
   duration: 4000,
 };

@@ -18,7 +18,7 @@ export default {
 export const Default = () => {
   const [arr, setArr] = useState([]);
   const generate = () => {
-    setArr([...arr, <SnackBar text="Text" placement="left" />]);
+    setArr([...arr, <SnackBar text="Text" alignment="left" />]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -41,7 +41,7 @@ export const DefaultTwoRows = () => {
       ...arr,
       <SnackBar
         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, culpa."
-        placement="left"
+        alignment="left"
       />,
     ]);
   };
@@ -200,16 +200,16 @@ export const WideLayoutWithAction = () => {
   );
 };
 
-export const Placement = () => {
+export const Alignment = () => {
   const [arr, setArr] = useState([]);
   const generateLeft = () => {
-    setArr([...arr, <SnackBar text="Placement left" placement="left" />]);
+    setArr([...arr, <SnackBar text="Left-aligned" alignment="left" />]);
   };
   const generateRight = () => {
-    setArr([...arr, <SnackBar text="Placement right" placement="right" />]);
+    setArr([...arr, <SnackBar text="Right-aligned" alignment="right" />]);
   };
   const generateCenter = () => {
-    setArr([...arr, <SnackBar text="Placement center" placement="center" />]);
+    setArr([...arr, <SnackBar text="Center-aligned" alignment="center" />]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -221,9 +221,6 @@ export const Placement = () => {
       </div>
       <Stack spacing="xl">
         <SnackBarWrapper>
-          {/* <SnackBar text="Placement left" placement="left" />
-          <SnackBar text="Placement center" placement="center" />
-          <SnackBar text="Placement right" placement="right" /> */}
           {arr.map((e) => {
             return e;
           })}
