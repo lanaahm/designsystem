@@ -18,7 +18,7 @@ export default {
 export const Default = () => {
   const [arr, setArr] = useState([]);
   const generate = () => {
-    setArr([...arr, <SnackBar text="Text" alignment="left" />]);
+    setArr([...arr, <SnackBar text="Text" alignment="left" layout='mobile'/>]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -42,6 +42,7 @@ export const DefaultTwoRows = () => {
       <SnackBar
         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, culpa."
         alignment="left"
+        layout='mobile'
       />,
     ]);
   };
@@ -62,7 +63,7 @@ export const DefaultTwoRows = () => {
 export const WithAction = () => {
   const [arr, setArr] = useState([]);
   const generate = () => {
-    setArr([...arr, <SnackBar text="Text" action="action" />]);
+    setArr([...arr, <SnackBar text="Text" action="action" layout='mobile'/>]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -86,6 +87,7 @@ export const WithActionTwoRows = () => {
       <SnackBar
         text="Lorem ipsum dolor sit, amet consectetur adipisicing elit."
         action="action"
+        layout='mobile'
       />,
     ]);
   };
@@ -107,7 +109,7 @@ export const WithActionTwoRows = () => {
 export const WithIcon = () => {
   const [arr, setArr] = useState([]);
   const generate = () => {
-    setArr([...arr, <SnackBar text="Text" icon={<InfoIcon />} />]);
+    setArr([...arr, <SnackBar text="Text" icon={<InfoIcon />} layout='mobile' />]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -129,7 +131,7 @@ export const WithIconAndAction = () => {
   const generate = () => {
     setArr([
       ...arr,
-      <SnackBar text="Text" action="action" icon={<InfoIcon />} />,
+      <SnackBar text="Text" action="action" icon={<InfoIcon />}  layout='mobile'/>,
     ]);
   };
   return (
@@ -203,13 +205,13 @@ export const WideLayoutWithAction = () => {
 export const Alignment = () => {
   const [arr, setArr] = useState([]);
   const generateLeft = () => {
-    setArr([...arr, <SnackBar text="Left-aligned" alignment="left" />]);
+    setArr([...arr, <SnackBar text="Left-aligned" alignment="left" layout='mobile' />]);
   };
   const generateRight = () => {
-    setArr([...arr, <SnackBar text="Right-aligned" alignment="right" />]);
+    setArr([...arr, <SnackBar text="Right-aligned" alignment="right"  layout='mobile'/>]);
   };
   const generateCenter = () => {
-    setArr([...arr, <SnackBar text="Center-aligned" alignment="center" />]);
+    setArr([...arr, <SnackBar text="Center-aligned" alignment="center"  layout='mobile'/>]);
   };
   return (
     <SystemBlock title="BCC Design System - Snack Bar">
@@ -239,7 +241,7 @@ export const Error = () => {
         text="Error occured"
         error={true}
         action="action"
-        icon={<InfoIcon />}
+        icon={<InfoIcon />} layout='mobile'
       />,
     ]);
   };

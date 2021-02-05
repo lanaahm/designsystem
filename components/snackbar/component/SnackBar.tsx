@@ -31,9 +31,9 @@ export interface SnackBarProps {
   action?: string;
   text?: string;
   error?: boolean;
-  layout?: "mobile" | "desktop";
+  layout?: "mobile" | "desktop" | "";
   alignment?: "left" | "center" | "right";
-  duration ?: number;
+  duration?: number;
 }
 
 export const SnackBarWrapper = styled("div")`
@@ -50,7 +50,7 @@ export const SnackBarWrapper = styled("div")`
 const SnackBarContainer = styled("div")`
   display: flex;
   position: relative;
-  bottom : 30%;
+  bottom: 30%;
   justify-content: ${(props) => {
     switch (props.alignment) {
       case "left":
@@ -71,7 +71,8 @@ const SnackBarInner = styled("div")`
   position: relative;
   min-height: 48px;
   opacity: ${(props) => (props.animation === "fadeIn" ? 1 : 0)};
-  animation: 1s ${(props) => (props.animation === "fadeIn" ? fadeIn : fadeOut)} ease-out;
+  animation: 1s ${(props) => (props.animation === "fadeIn" ? fadeIn : fadeOut)}
+    ease-out;
   background-color: ${(props) => (props.error ? colors.merah : colors.biru)};
   ${(props) => (props.layout === "mobile" ? "width: 344px;" : "")};
   border-radius: 5px;
@@ -103,18 +104,32 @@ const Snackbar: React.FC<SnackBarProps> = ({
   icon,
   error,
   alignment,
+  duration,
   layout,
-  duration
 }) => {
   const [animation, setAnimation] = React.useState("fadeIn");
+  const [layoutWidth, setLayout] = React.useState(layout);
+
   React.useEffect(() => {
     setTimeout(() => {
-        setAnimation('fadeOut');
+      setAnimation("fadeOut");
     }, duration);
-  });
+    if (layout === "desktop") {
+      
+    } else if (layout === "mobile") {
+    
+    } else {
+      if (window.innerWidth < 576) {
+        setLayout("mobile");
+      } else {
+        setLayout("desktop");
+      }
+    }
+    console.log(window.innerWidth);
+  }, [window.innerWidth]);
   return (
     <SnackBarContainer alignment={alignment}>
-      <SnackBarInner error={error} layout={layout} animation = {animation}>
+      <SnackBarInner error={error} layout={layout || layoutWidth} animation={animation}>
         {icon && <Icon>{icon}</Icon>}
         <Text>{text}</Text>
         {action && <Action>{action.toUpperCase()}</Action>}
@@ -127,8 +142,8 @@ Snackbar.defaultProps = {
   icon: null,
   action: null,
   error: false,
+  layout: "",
   alignment: "left",
-  layout: "mobile",
   duration: 4000,
 };
 
