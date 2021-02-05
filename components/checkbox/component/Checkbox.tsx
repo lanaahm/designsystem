@@ -2,7 +2,7 @@ import * as React from "react";
 import styled from "styled-components";
 import CheckIcon from "@material-ui/icons/Check";
 import HypenIcon from "@material-ui/icons/Remove";
-import { useState, useRef, useEffect, useLayoutEffect } from "react";
+import { useState } from "react";
 import { colors } from "../../_utils";
 
 export interface CheckboxProps {
@@ -24,12 +24,13 @@ const Label = styled("label")`
   position: relative;
   display: flex;
   margin: 8px 0;
+  z-index: 1;
 `;
 
 const MyCheckBox = styled("input")`
   position: absolute;
   opacity: 0;
-  cursor:  ${(props) => props.disabled ? "not-allowed" : "pointer"};
+  cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
 `;
 
 const SpanCheckMark = styled("span")`
@@ -38,25 +39,38 @@ const SpanCheckMark = styled("span")`
   border: 1.5px solid #888888;
   border-color: ${(props) =>
     (props.disabled && props.checked) ||
-    (props.disabled && props.indeterminated)||
-    (props.checked)||
-    (props.indeterminated)
+    (props.disabled && props.indeterminated) ||
+    props.checked ||
+    props.indeterminated
       ? "#fff"
-      : props.disabled ? "#D8D8D8" :"#888888"};
+      : props.disabled
+      ? "#D8D8D8"
+      : "#888888"};
   border-radius: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: ${(props) =>
-    props.disabled
-      ? props.checked || props.indeterminated ? "#D8D8D8" :"#FBFBFB"
-      : props.checked || props.indeterminated
-      ? colors.biru03
-      : ""};
+    props.disabled ? props.checked || props.indeterminated ? "#D8D8D8": "#FBFBFB" : props.checked || props.indeterminated 
+    ? colors.biru03 : "#fff"};
 `;
 
 const CheckMarkFill = styled("div")`
   margin-left: 16px;
+`;
+
+const Shadow = styled("div")`
+  position: absolute;
+  left: 9px;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translate(-50%, -50%);
+  width: 24px;
+  height: 24px;
+  background-color: ${(props) => (props.isChecked ? "#E4F4FF" : "#F1F1F1")};
+  z-index: -1;
+  border-radius: 3px;
 `;
 
 const Checkbox: React.FC<CheckboxProps> = ({
@@ -68,6 +82,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
 }) => {
   const [isChecked, setIsChecked] = useState(checked);
   const [isIndeterminated, setIsIndeterminated] = useState(indeterminated);
+  const [shadow, setShadow] = useState(false);
   const styledIcon = { width: "15px", height: "15px", color: "#fff" };
   return (
     <>
@@ -78,21 +93,24 @@ const Checkbox: React.FC<CheckboxProps> = ({
           }
           setIsIndeterminated(false);
           setIsChecked(!isChecked);
-          console.log(isChecked);
-          console.log(disabled);
         }}
       >
-        <SpanCheckMark
-          checked={isChecked}
-          disabled={disabled}
-          indeterminated={isIndeterminated}
-        >
-          {isChecked ? (
-            <CheckIcon style={styledIcon} />
-          ) : (
-            indeterminated && <HypenIcon style={styledIcon} />
-          )}
-        </SpanCheckMark>
+        <div >
+          <SpanCheckMark
+            checked={isChecked}
+            disabled={disabled}
+            indeterminated={isIndeterminated}
+            onMouseEnter = {()=>setShadow(true)} onMouseLeave={()=>setShadow(false)}
+          >
+            {isChecked ? (
+              <CheckIcon style={styledIcon} />
+            ) : (
+              indeterminated && <HypenIcon style={styledIcon} />
+            )}
+          </SpanCheckMark>
+          {shadow && !disabled && <Shadow isChecked={isChecked} />}
+        </div>
+
         <MyCheckBox
           value={value}
           type="checkbox"
@@ -100,6 +118,7 @@ const Checkbox: React.FC<CheckboxProps> = ({
           disabled={disabled}
           id={id}
           ref={(el) => el && (el.indeterminate = isIndeterminated)}
+          onMouseEnter = {()=>setShadow(true)} onMouseLeave={()=>setShadow(false)}
         />
         <CheckMarkFill>{value}</CheckMarkFill>
       </Label>

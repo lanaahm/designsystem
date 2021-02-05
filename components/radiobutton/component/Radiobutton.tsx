@@ -28,9 +28,6 @@ const Radio = styled("input")`
       opacity: 1;
     }
   }
-  &:hover + label > div {
-    border: 3px solid red;
-  }
   &:disabled {
     &:checked + label > span {
       border: 1.5px solid #d8d8d8;
@@ -50,7 +47,6 @@ const Radio = styled("input")`
 
 const Circle = styled("span")`
   position: relative;
-  z-index: 2;
   box-sizing: content-box;
   display: inline-block;
   vertical-align: middle;
@@ -80,16 +76,16 @@ const Circle = styled("span")`
 const Shadow = styled("div")`
   display: inline-block;
   vertical-align: middle;
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  border: 3px solid tranparent;
+  z-index: -1;
+  left: -2px;
+  top: -2px;
   box-sizing: content-box;
+  background-color: red;
 `;
 
 const Label = styled("label")`
@@ -120,7 +116,8 @@ const RadioButton: React.FC<RadioButtonProps> = ({
           onChange={handleChange}
         />
         <Label htmlFor={id}>
-          <Circle />
+          <Circle>
+          </Circle>
           {children}
         </Label>
       </RadioContainer>
