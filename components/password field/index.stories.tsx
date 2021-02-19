@@ -16,7 +16,7 @@ export default {
 
 export const Default = () => {
   const [password, setPassord] = useState("");
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   return (
     <SystemBlock title="BCC Design System - Password Field">
       <Stack spacing="xl">
@@ -33,7 +33,7 @@ export const Default = () => {
 
 export const Placeholder = () => {
   const [password, setPassord] = useState("");
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   return (
     <SystemBlock title="BCC Design System - Password Field">
       <Stack spacing="xl">
@@ -51,7 +51,7 @@ export const Placeholder = () => {
 
 export const HintText = () => {
   const [password, setPassord] = useState("");
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   return (
     <SystemBlock title="BCC Design System - Password Field">
       <Stack spacing="xl">
@@ -70,7 +70,7 @@ export const HintText = () => {
 
 export const Disabled = () => {
   const [password, setPassord] = useState("");
-  const [isShow, setIsShow] = useState(false);
+  const [isShow, setIsShow] = useState(true);
   return (
     <SystemBlock title="BCC Design System - Password Field">
       <Stack spacing="xl">

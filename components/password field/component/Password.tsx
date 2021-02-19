@@ -1,8 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import PropTypes from "prop-types";
-import { colors } from "../../_utils";
 import Visibility from "@material-ui/icons/Visibility";
 import VisibilityOff from "@material-ui/icons/VisibilityOff";
 import Lock from "@material-ui/icons/Lock";
@@ -101,7 +98,7 @@ const Password: React.FC<PasswordProps> = ({
           placeholder={placeholder}
           disabled={disabled}
           value={value}
-          type={`${visibilityEye ? "text" : "password"}`}
+          type={`${!visibilityEye ? "text" : "password"}`}
           onChange={handleChange}
         />
       </FieldContainer>
