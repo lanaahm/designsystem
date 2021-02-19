@@ -71,6 +71,24 @@ const Circle = styled("span")`
     transform: translate(-50%, -50%);
     transition: opacity 0.2s ease-in-out;
   }
+  &::after {
+    content: "";
+    width: 29.7px;
+    height: 29.7px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50.4%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    background-color : transparent;
+    -webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    -webkit-transition: opacity 0.2s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
+    border: 3.5px solid ${props => props.shadow ? props.checked ? '#E4F4FF': '#F1F1F1' : "#fff" };
+  }
 `;
 
 const Shadow = styled("div")`
@@ -104,9 +122,10 @@ const RadioButton: React.FC<RadioButtonProps> = ({
   id,
   value,
 }) => {
+  const [shadow, setShadow] = React.useState(false);
   return (
     <>
-      <RadioContainer>
+      <RadioContainer  onMouseEnter = {()=>setShadow(true)} onMouseLeave={()=>setShadow(false)}>
         <Radio
           type="radio"
           id={id}
@@ -116,7 +135,7 @@ const RadioButton: React.FC<RadioButtonProps> = ({
           onChange={handleChange}
         />
         <Label htmlFor={id}>
-          <Circle>
+          <Circle shadow = {!disabled && shadow} checked ={checked}>
           </Circle>
           {children}
         </Label>
