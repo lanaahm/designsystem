@@ -1,8 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
-import { themeGet } from "@styled-system/theme-get";
-import PropTypes from "prop-types";
-import { colors } from "../../_utils";
+import Success from "@material-ui/icons/Check";
 
 export interface InputProps {
   disabled?: boolean;
@@ -13,12 +11,17 @@ export interface InputProps {
   action?: string;
   handleChange?: Function;
   hintText?: string;
+  success?: boolean;
+  className?: string;
+  icon?: React.ReactElement;
   style?: React.CSSProperties;
+  skeleton?: boolean;
 }
 
 const ContainerInput = styled("div")`
   display: inline-flex;
   flex-direction: column;
+  position: relative;
 `;
 
 const InputField = styled("input")`
@@ -31,6 +34,7 @@ const InputField = styled("input")`
   background-color: white;
   outline: none;
   min-width: 280px;
+
 
   &::placeholder {
     color: rgba(20, 48, 69, 0.5);
@@ -98,20 +102,36 @@ const Input: React.FC<InputProps> = ({
   handleChange,
   action,
   type,
+  success,
+  className,
+  icon,
+  skeleton,
   ...rest
 }) => {
   return (
     <ContainerInput>
-      <InputField
-        placeholder={placeholder}
-        disabled={disabled}
-        action={action}
-        value={value}
-        onChange={handleChange}
-        type={type}
-      />
+      <div>
+        {action ==='success' && value.length > 0? (
+          <Success
+            style={{ color: "#2DCC70", position: "absolute", right: "16px", top : "12px" }}
+          />
+        ) : null}
+        <span style={{ color: "#D8D8D8", position: "absolute", left: "16px", top : "12px" }}>
+          {icon}
+        </span>
+        <InputField
+          placeholder={placeholder}
+          disabled={disabled}
+          action={value.length > 0 ? action : "normal"}
+          value={value}
+          onChange={handleChange}
+          type={type}
+          className={skeleton && "skeleton"}
+          style= {icon && {paddingLeft : '48px'} || success && {paddingRight : '48px'}}
+        ></InputField>
+      </div>
       {hintText.length > 0 ? (
-        <HintText action={action}>{hintText}</HintText>
+        <HintText className={skeleton && "skeleton"} style={skeleton&&{width:'30%'}} action={value.length > 0 ? action : "normal"}>{hintText}</HintText>
       ) : null}
     </ContainerInput>
   );
