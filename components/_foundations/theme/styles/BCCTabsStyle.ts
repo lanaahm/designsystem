@@ -174,7 +174,7 @@ const BCCTabsStyle = css`
     border: 0;
     min-height: 48px;
     padding: 0 32px;
-    margin: 12px 0 0 12px;
+    margin: 12px 0 0 0;
     font-size: 16px;
     text-transform: uppercase;
     background: rgba(255, 255, 255, 0);
@@ -187,6 +187,8 @@ const BCCTabsStyle = css`
     align-items: center;
     font-weight: 400;
     opacity: .5;
+    transition:background 0.8s;
+    background-position:center;
   }
   .bcc-tabs-tab:hover {
     opacity: .8;
@@ -231,21 +233,22 @@ const BCCTabsStyle = css`
     background: ${colors.putih};
   }
 
-  //Ligth style
-  .bcc-tabs-style-Ligth {
+  //Light style
+  .bcc-tabs-style-Light {
     background: ${colors.putih};
     color: ${colors.biru03}
   }
-  .bcc-tabs-style-Ligth .bcc-tabs-ink-bar {
+  .bcc-tabs-style-Light .bcc-tabs-ink-bar {
     background: ${colors.biru03};
   }
 
   //Dark style
-  .bcc-tabs-style-Darkk {
+  .bcc-tabs-style-Dark {
     background: ${colors.primaryText};
     color: ${colors.orange001};
+    user-select:none;
   }
-  .bcc-tabs-style-Darkk .bcc-tabs-ink-bar {
+  .bcc-tabs-style-Dark .bcc-tabs-ink-bar {
     background: ${colors.orange001};
   }
   
@@ -267,6 +270,36 @@ const BCCTabsStyle = css`
   .bcc-tabs-tab.bcc-tabs-tab-active > .bcc-tabs-tab-btn > span.icon-with-text > svg {
     margin-bottom: 4px;
   }
+
+  //ripple effect
+ 
+
+  .bcc-tabs-style-Dark .bcc-tabs-tab:hover  {
+      background: ${colors.primaryText} radial-gradient(circle, transparent 1%, ${colors.primaryText} 1%) center/15000%;
+    }
+  .bcc-tabs-style-Dark .bcc-tabs-tab:active {
+      background-color: rgb(0,0,0, 0.7);
+      background-size: 100%;
+      transition: background 0s;
+    }
+
+  .bcc-tabs-style-Light .bcc-tabs-tab:hover  {
+      background: ${colors.biru} radial-gradient(circle, transparent 1%, ${colors.primaryText} 1%) center/15000%;
+    }
+  .bcc-tabs-style-Light .bcc-tabs-tab:active {
+      background-color: rgb(255,255,255, 0.7);
+      background-size: 100%;
+      transition: background 0s;
+    }
+
+  .bcc-tabs-style-Primary .bcc-tabs-tab:hover  {
+      background: ${colors.primaryText} radial-gradient(circle, transparent 1%, ${colors.primaryText} 1%) center/15000%;
+    }
+  .bcc-tabs-style-Primary .bcc-tabs-tab:active {
+      background-color: rgb(255,255,255, 0.7);
+      background-size: 100%;
+      transition: background 0s;
+    }
 `;
 
 export default BCCTabsStyle;

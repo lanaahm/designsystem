@@ -94,7 +94,7 @@ export const Example = () => (
             spacing="md"
           >
             <Heading fontWeight="300" mx={15}>
-              Ligth
+              Light`
             </Heading>
             <Heading fontWeight="400" mx={15}>
               Regular

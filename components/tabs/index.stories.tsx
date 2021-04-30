@@ -6,7 +6,10 @@ import {
 } from "../_utils/storybook";
 import { Stack } from "../_foundations/common";
 import { Tabs, TabPane } from ".";
-import { withKnobs, text, boolean, select } from "@storybook/addon-knobs";
+import {
+  withKnobs,
+  select,
+} from "@storybook/addon-knobs";
 import { Box } from "../_foundations";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingBag } from "@fortawesome/free-solid-svg-icons";
@@ -24,118 +27,178 @@ export default {
   },
 };
 
-export const Example = () => (
-  <SystemBlock title="BCC Design System - Tabs">
-    <Stack spacing="xl">
-      <ComponentBlock title="" withBackground pd="0">
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="repeat(3,1fr)"
-        >
-          <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
-          </Tabs>
-          <Tabs defaultActiveKey="1" tabStyle="Ligth">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
-          </Tabs>
-          <Tabs defaultActiveKey="1" tabStyle="Darkk">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3" disabled></TabPane>
-          </Tabs>
-        </Box>
-      </ComponentBlock>
-      <ComponentBlock title="" withBackground pd="0">
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="auto 2fr"
-        >
-          <Tabs defaultActiveKey="1" tabStyle="Darkk">
-            <TabPane
-              tab={
-                <span>
-                  <FontAwesomeIcon icon={faShoppingBag} />
-                </span>
-              }
-              key="1"
-            ></TabPane>
-            <TabPane
-              tab={
-                <span>
-                  <FontAwesomeIcon icon={faHome} />
-                </span>
-              }
-              key="2"
-            ></TabPane>
-            <TabPane
-              tab={
-                <span>
-                  <FontAwesomeIcon icon={faUserCircle} />
-                </span>
-              }
-              key="3"
-            ></TabPane>
-          </Tabs>
-          <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3"></TabPane>
-            <TabPane tab="Tab 4" key="4" disabled></TabPane>
-          </Tabs>
-        </Box>
-      </ComponentBlock>
-      <ComponentBlock title="" withBackground>
-        <Box
-          display="grid"
-          width="100%"
-          gridGap="30px"
-          gridTemplateColumns="auto 2fr"
-        >
-          <Tabs defaultActiveKey="1" tabStyle="Darkk">
-            <TabPane
-              tab={
-                <span className="icon-with-text">
-                  <FontAwesomeIcon icon={faShoppingBag} />
-                  <p>Shop</p>
-                </span>
-              }
-              key="1"
-            ></TabPane>
-            <TabPane
-              tab={
-                <span className="icon-with-text">
-                  <FontAwesomeIcon icon={faHome} />
-                  <p>Home</p>
-                </span>
-              }
-              key="2"
-            ></TabPane>
-            <TabPane
-              tab={
-                <span className="icon-with-text">
-                  <FontAwesomeIcon icon={faUserCircle} />
-                  <p>User</p>
-                </span>
-              }
-              key="3"
-            ></TabPane>
-          </Tabs>
-          <Tabs defaultActiveKey="1" tabStyle="Primary">
-            <TabPane tab="Tab 1" key="1"></TabPane>
-            <TabPane tab="Tab 2" key="2"></TabPane>
-            <TabPane tab="Tab 3" key="3"></TabPane>
-            <TabPane tab="Tab 4" key="4" disabled></TabPane>
-          </Tabs>
-        </Box>
-      </ComponentBlock>
-    </Stack>
-  </SystemBlock>
-);
+
+export const miniTab = () => {
+  const label = "Color";
+  const optionsColor = {
+    Primary: "Primary",
+    Light: "Light",
+    Dark: "Dark",
+  };
+  const defaultValue = "Primary";
+  return (
+    <SystemBlock title="BCC Design System - Mini Tab">
+      <Stack spacing="xl">
+        <ComponentBlock title="" withBackground pd="">
+          <Box
+            display="grid"
+            width="100%"
+            gridGap="30px"
+            gridTemplateColumns="repeat(3,1fr)"
+          >
+            <Tabs
+              defaultActiveKey="1"
+              tabStyle={select(label, optionsColor, defaultValue)}
+            >
+              <TabPane tab="Tab 1" key="1"></TabPane>
+              <TabPane tab="Tab 2" key="2"></TabPane>
+              <TabPane tab="Tab 3" key="3" disabled></TabPane>
+            </Tabs>
+          </Box>
+        </ComponentBlock>
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const iconTab = () => {
+  const label = "Color";
+  const optionsColor = {
+    Primary: "Primary",
+    Light: "Light",
+    Dark: "Dark",
+  };
+  const defaultValue = "Primary";
+  return (
+    <SystemBlock title="BCC Design System - Icon Tab">
+      <Stack spacing="xl">
+        <ComponentBlock title="" withBackground pd="0">
+          <Box
+            display="grid"
+            width="100%"
+            gridGap="30px"
+            gridTemplateColumns="auto 2fr"
+          >
+            <Tabs
+              defaultActiveKey="1"
+              tabStyle={select(label, optionsColor, defaultValue)}
+            >
+              <TabPane
+                tab={
+                  <span>
+                    <FontAwesomeIcon icon={faShoppingBag} />
+                  </span>
+                }
+                key="1"
+              ></TabPane>
+              <TabPane
+                tab={
+                  <span>
+                    <FontAwesomeIcon icon={faHome} />
+                  </span>
+                }
+                key="2"
+              ></TabPane>
+              <TabPane
+                tab={
+                  <span>
+                    <FontAwesomeIcon icon={faUserCircle} />
+                  </span>
+                }
+                key="3"
+              ></TabPane>
+            </Tabs>
+          </Box>
+        </ComponentBlock>
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const iconTabWithLabel = () => {
+  const label = "Color";
+  const optionsColor = {
+    Primary: "Primary",
+    Light: "Light",
+    Dark: "Dark",
+  };
+  const defaultValue = "Primary";
+  return (
+    <SystemBlock title="BCC Design System - Icon Tab With Label">
+      <Stack spacing="xl">
+        <ComponentBlock title="" withBackground>
+          <Box
+            display="grid"
+            width="100%"
+            gridGap="30px"
+            gridTemplateColumns="auto 2fr"
+          >
+            <Tabs
+              defaultActiveKey="1"
+              tabStyle={select(label, optionsColor, defaultValue)}
+            >
+              <TabPane
+                tab={
+                  <span className="icon-with-text">
+                    <FontAwesomeIcon icon={faShoppingBag} />
+                    <p>Shop</p>
+                  </span>
+                }
+                key="1"
+              ></TabPane>
+              <TabPane
+                tab={
+                  <span className="icon-with-text">
+                    <FontAwesomeIcon icon={faHome} />
+                    <p>Home</p>
+                  </span>
+                }
+                key="2"
+              ></TabPane>
+              <TabPane
+                tab={
+                  <span className="icon-with-text">
+                    <FontAwesomeIcon icon={faUserCircle} />
+                    <p>User</p>
+                  </span>
+                }
+                key="3"
+              ></TabPane>
+            </Tabs>
+          </Box>
+        </ComponentBlock>
+      </Stack>
+    </SystemBlock>
+  );
+};
+
+export const fullTab = () => {
+  const label = "Color";
+  const optionsColor = {
+    Primary: "Primary",
+    Light: "Light",
+    Dark: "Dark",
+  };
+  const defaultValue = "Primary";
+  return (
+    <SystemBlock title="BCC Design System - Full Tab">
+      <Stack spacing="xl">
+        <ComponentBlock title="" withBackground>
+          <Box
+            display="grid"
+            width="100%"
+            gridGap="30px"
+            gridTemplateColumns="auto 2fr"
+          >
+            <Tabs defaultActiveKey="1" tabStyle={select(label, optionsColor, defaultValue)}>
+              <TabPane tab="Tab 1" key="1"></TabPane>
+              <TabPane tab="Tab 2" key="2"></TabPane>
+              <TabPane tab="Tab 3" key="3"></TabPane>
+              <TabPane tab="Tab 4" key="4" disabled></TabPane>
+            </Tabs>
+          </Box>
+        </ComponentBlock>
+      </Stack>
+    </SystemBlock>
+  );
+};
